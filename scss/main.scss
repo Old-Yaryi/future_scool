@@ -52,11 +52,20 @@ h1 {
 	font-size: 50px;
 	color: #243976;
 	font-weight: bold;
-
+	line-height: 103.2%;
+}
+h2 {
+	font-size: 32px;
+	line-height: 103.2%;
+	font-family: 'ALSSchlangesans-Bold';
+	color: #243976;
+	font-weight: bold;
 }
 .header {
 	margin-top: 15px;
 	position: relative;
+	height: 770px;
+	margin-bottom: 60px;
 	
 	
 	&__top {
@@ -160,7 +169,6 @@ h1 {
 	}
 
 	&__feedback {
-		margin-bottom: 60px;
 		position: relative;
 		&_button {
 			margin-bottom: 15px;
@@ -180,3 +188,40 @@ h1 {
 		}
 	}
 }
+.who {
+	&__title {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+	&__items {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		margin-bottom: 24px;
+
+		&_item {
+			text-align: center;
+			
+
+			&-img {
+				margin-bottom: 32px;
+			}
+			&-text {
+				font-weight: 500;
+				font-size: 15px;
+				line-height: 150%;
+				width: 242px;
+			}
+		}
+	}
+	&__banner {
+		position: relative;
+		&_item {
+			display: flex;
+		}
+		&_img {
+			position: absolute;	
+		}
+	}
+}
+
