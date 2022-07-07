@@ -218,16 +218,12 @@ h2 {
 .who__items {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
-  margin-bottom: 24px;
+  justify-content: center;
+  margin-bottom: 90px;
 }
 
 .who__items_item {
   text-align: center;
-}
-
-.who__items_item-img {
-  margin-bottom: 32px;
 }
 
 .who__items_item-text {
@@ -239,14 +235,47 @@ h2 {
 
 .who__banner {
   position: relative;
+  margin-bottom: 80px;
 }
 
 .who__banner_item {
   display: flex;
   position: relative;
+  background-color: #EFF2FD;
+  align-items: center;
+  border-radius: 25px;
 }
 
-.who__banner_img::before {
+.who__banner_item-img {
   position: absolute;
-  content: url("./img/girl_banner.png");
+  bottom: 17px;
+  margin-left: 20px;
+}
+
+.who__banner_item-span {
+  width: 350px;
+}
+
+.who__banner_item-text {
+  margin-right: 33px;
+}
+
+.who__banner_item-text h2 {
+  margin-bottom: 5px;
+}
+
+.who__banner_item-feedback_button {
+  margin-top: 23px;
+  margin-bottom: 10px;
+  margin-right: 47px;
+}
+
+.who__banner_item-feedback_messenger {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.who__banner_item-feedback_messenger p, .who__banner_item-feedback_messenger a {
+  margin-right: 15px;
 }
