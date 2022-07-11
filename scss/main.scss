@@ -18,7 +18,6 @@
 						/*******global***************/
 body {
 	color: 	#243976;
-  max-width: 1920px;
 	font-family: 'gothampro', sans-serif;
 	font-size: 15px	
 }
@@ -57,6 +56,7 @@ h1 {
 	font-weight: bold;
 	line-height: 103.2%;
 	text-align: center;
+	padding: 0 10px;
 }
 h2 {
 	font-size: 32px;
@@ -403,12 +403,13 @@ h3 {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 490px;
+		/*height: 490px;*/
 		&_inners {
-			width: 376px;
+			
 			&-inner {
 				height: 470px;
-				width: 360px;
+				/*width: 360px;*/
+				padding: 60px 40px;
 				align-items: center;
 				display: flex;
 				flex-direction: column;
@@ -436,33 +437,31 @@ h3 {
 
 		}
 		&_img {
-			padding-right: 30px;
+			padding: 30px;
 		}
-
 	}
 
 }
 .overlay {
-	margin-left: -10px;
-	&:hover {
-		margin-left: -70px; ;
-		height: 490px;
-		width: 376px;
-		background: linear-gradient(26.5deg, #4271DF 16.72%, #789CF1 95.45%);
-		border-radius: 15px;
-		cursor: pointer;
-		filter: drop-shadow(4px 12px 20px rgba(30, 35, 66, 0.15));
+	margin-left: -25px;
+	height: 490px;
+	background: linear-gradient(26.5deg, #4271DF 16.72%, #789CF1 95.45%);
+	border-radius: 15px;
+	cursor: pointer;
+	filter: drop-shadow(4px 12px 20px rgba(30, 35, 66, 0.15));
+	color: #fff;
+	& h2 {
 		color: #fff;
-		transition: 0.5s;
-		& h2 {
+	}
+	& ul {
+		& li {
 			color: #fff;
 		}
-		& ul {
-			& li {
-				color: #fff;
-			}
-		}
-	}
+	}	
+
 }
+
+/**********************/
+
 
 
