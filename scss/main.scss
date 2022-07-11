@@ -164,7 +164,6 @@ h3 {
 		&_title {
 			font-family: 'ALSSchlangesans-Bold';
 			font-size: 84px ;
-			width: 682px;
 			margin-bottom: 40px;
 			text-align: left;
 			& span {
@@ -403,13 +402,15 @@ h3 {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		/*height: 490px;*/
-		&_inners {
-			
+		&_img {
+			& img {
+				width: 100%;
+			}
+		}
+		&_inners {			
 			&-inner {
 				height: 470px;
-				/*width: 360px;*/
-				padding: 60px 40px;
+				width: 360px;
 				align-items: center;
 				display: flex;
 				flex-direction: column;
@@ -417,7 +418,6 @@ h3 {
 				background: linear-gradient(180deg, #EFF2FD 0%, #FCFCFC 100%);
 				border-radius: 15px;
 				filter: drop-shadow(3.90651px 11.7195px 31.2521px rgba(30, 35, 66, 0.15));
-				cursor: pointer;
 				& h2 {
 					margin-bottom: 29px;
 				}	
@@ -434,17 +434,16 @@ h3 {
 					}
 				}		
 			}
-
 		}
 		&_img {
 			padding: 30px;
 		}
 	}
-
 }
 .overlay {
-	margin-left: -25px;
+	margin-left: -50px;
 	height: 490px;
+	width: 376px;
 	background: linear-gradient(26.5deg, #4271DF 16.72%, #789CF1 95.45%);
 	border-radius: 15px;
 	cursor: pointer;
@@ -458,7 +457,6 @@ h3 {
 			color: #fff;
 		}
 	}	
-
 }
 
 /**********************/
