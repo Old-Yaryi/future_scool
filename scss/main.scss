@@ -686,7 +686,70 @@ h3 {
 	right: 40%;
 }
 /********************************/
+.faq {
+	margin-bottom: 80px;
+	position: relative;
+	&__items {
+		box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+		margin-bottom: 30px;
+		border-radius: 25px;
+		background: #EFF2FD;
+		position: relative;			
+	}
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		padding-right: 58px;
+		padding-left: 47px;
+		align-items: center;
+		height: 120px;
+		margin: 0 25px;
+		position: relative;
+		cursor: pointer;
+		&::before {
+			position: absolute;
+			content: url(../img/faq_btn_open.svg);
+			margin-right: 58px;
+			right: 0;
+		}
+		& h2 {
+			text-align: left;
+		}
+	}
+	&__inner {
+		overflow: hidden;
+		line-height: 20.8px;
+		border-radius: 0 0 25px 25px;
+		height: 0;
+		&::after {
+			position: absolute;
+			content: "";
+			left: 0;
+			bottom: 0;
+			background: #243976;
+			border-radius: 25px 0px 0px 25px;
+			width: 0;
+			height: 100%;
+		}
+		& ul {
+			& li {
+				margin-left: 30px;
+			}
+		}		
+	}
+}
 
+.faq__items.active .faq__item::before {
+	content: url(../img/faq_btn_close.svg);
+}
+.faq__items.active .faq__inner {
+	padding: 0px 160px 192px 60px;
+	height: 100%;
+}
+.faq__items.active .faq__inner::after {
+	width: 25px;
+}
+ 
 
 
 
