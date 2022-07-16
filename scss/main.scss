@@ -72,6 +72,22 @@ h3 {
 	line-height: 103%;
 	color: #243976;
 }
+input {
+	padding: 16px 8px 16px 64px;
+	color: #9E9E9E;
+	font-size: 13px;
+	line-height: 13px;
+	border: 1px solid #E0E0E0;
+	border-radius: 32px;
+	width: 298px;
+}
+input, textarea,input:active, textarea:active {
+	outline:none;
+	}
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+	visibility: hidden;
+	}
 /*********blocks***********/
 .header {
 	margin-top: 15px;
@@ -750,6 +766,100 @@ h3 {
 	width: 25px;
 }
  
+/********************************/
+.cta {
+	margin-bottom: 100px;
+	&__items {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		& h1 {
+			margin-bottom: 10px;
+			font-size: 50px;
+			line-height: 103%;
+			& span {
+				background: linear-gradient(26.5deg, #4271DF 16.72%, #789CF1 95.45%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+		}
+		& p {
+			margin-bottom: 35px;
+		}
+		&-img {
+			& img {
+			width: 100%;
+			}
+		}
+	}
+	&__item.forma {
+		background: url(../img/CTA_bg.png) no-repeat;
+		margin-right: 75px;
+	}
+	&__form {
+		margin: 96px -34px 8px 114px;
+		&-action {
+			display: flex;
+			flex-direction: column;
+			padding: 35px 25px;
+			box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
+			border-radius: 15px;
+			text-align: center;	
+			align-items: center;
+			position: relative;
+		}
+		&-order{
+			margin-bottom: 20px;
+			position: relative;
+			&::after {
+				position: absolute;
+				content: "";
+				background-color: #F8F8F8;
+				background-image: url(../img/form_class.svg);
+				background-repeat: no-repeat;
+				background-size: 25px 25px;
+				width: 56px;
+				height: 46px;
+				left: 0;
+				background-position: center;
+				border-radius: 32px 0px 0px 32px;
+				top: 1px;
+			}&.name::after {
+				background-image: url(../img/form_name.svg);
+			}
+			&.phone::after {
+			background-image: url(../img/form_phone.svg);
+			}
+		}
+		&-btn {
+			margin-bottom: 20px;
+			width: 196px;
+			height: 56px;
+		}
+		& p {
+			font-size: 13px;
+			line-height: 16px;
+			color: #9E9E9E;
+			padding-left: 10px;
+			padding-right: 10px;
+			position: relative;
+			&::before {
+				position: absolute;
+				content: "";
+				height: 1px;
+				width: 91%;
+				background-color: #9E9E9E;
+				bottom: 0;
+				opacity: .5;
+			}
+		}
+
+			
+		
+	}
+}
 
 
 

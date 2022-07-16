@@ -83,6 +83,25 @@ h3 {
   color: #243976;
 }
 
+input {
+  padding: 16px 8px 16px 64px;
+  color: #9E9E9E;
+  font-size: 13px;
+  line-height: 13px;
+  border: 1px solid #E0E0E0;
+  border-radius: 32px;
+  width: 298px;
+}
+
+input, textarea, input:active, textarea:active {
+  outline: none;
+}
+
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+  visibility: hidden;
+}
+
 /*********blocks***********/
 .header {
   margin-top: 15px;
@@ -830,4 +849,108 @@ h3 {
 
 .faq__items.active .faq__inner::after {
   width: 25px;
+}
+
+/********************************/
+.cta {
+  margin-bottom: 100px;
+}
+
+.cta__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta__item h1 {
+  margin-bottom: 10px;
+  font-size: 50px;
+  line-height: 103%;
+}
+
+.cta__item h1 span {
+  background: linear-gradient(26.5deg, #4271DF 16.72%, #789CF1 95.45%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cta__item p {
+  margin-bottom: 35px;
+}
+
+.cta__item-img img {
+  width: 100%;
+}
+
+.cta__item.forma {
+  background: url(../img/CTA_bg.png) no-repeat;
+  margin-right: 75px;
+}
+
+.cta__form {
+  margin: 96px -34px 8px 114px;
+}
+
+.cta__form-action {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 25px;
+  box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
+  border-radius: 15px;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.cta__form-order {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.cta__form-order::after {
+  position: absolute;
+  content: "";
+  background-color: #F8F8F8;
+  background-image: url(../img/form_class.svg);
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  width: 56px;
+  height: 46px;
+  left: 0;
+  background-position: center;
+  border-radius: 32px 0px 0px 32px;
+  top: 1px;
+}
+
+.cta__form-order.name::after {
+  background-image: url(../img/form_name.svg);
+}
+
+.cta__form-order.phone::after {
+  background-image: url(../img/form_phone.svg);
+}
+
+.cta__form-btn {
+  margin-bottom: 20px;
+  width: 196px;
+  height: 56px;
+}
+
+.cta__form p {
+  font-size: 13px;
+  line-height: 16px;
+  color: #9E9E9E;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+
+.cta__form p::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 91%;
+  background-color: #9E9E9E;
+  bottom: 0;
+  opacity: .5;
 }
