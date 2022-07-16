@@ -102,6 +102,11 @@ input[type="radio"]:focus {
   visibility: hidden;
 }
 
+footer {
+  background: #EFF2FD;
+  padding-top: 50px;
+}
+
 /*********blocks***********/
 .header {
   margin-top: 15px;
@@ -953,4 +958,127 @@ input[type="radio"]:focus {
   background-color: #9E9E9E;
   bottom: 0;
   opacity: .5;
+}
+
+/********************************/
+.footer__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__inner-logo {
+  margin-bottom: 65px;
+}
+
+.footer__inner-cont {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 16px;
+  color: #9299AF;
+  width: 254px;
+  margin-bottom: 16px;
+}
+
+.footer__inner h4 {
+  font-size: 20px;
+  line-height: 21px;
+}
+
+.footer__inner.classs {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__inner.classs h4 {
+  margin-bottom: 15px;
+}
+
+.footer__inner.classs a {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.footer__inner.doc {
+  position: relative;
+}
+
+.footer__inner.doc h4 {
+  margin-bottom: 25px;
+}
+
+.footer__inner-doc {
+  position: relative;
+}
+
+.footer__inner-doc::after {
+  position: absolute;
+  content: url(../img/footer_doc.svg);
+  left: 0;
+}
+
+.footer__inner-doc a {
+  margin-left: 25px;
+}
+
+.footer__inner.social h4 {
+  margin-bottom: 20px;
+}
+
+.footer__inner-social {
+  display: flex;
+  height: 45px;
+  width: 45px;
+  align-items: center;
+}
+
+.footer__inner-social a {
+  margin-right: 10px;
+}
+
+.footer__inner-social a:last-child {
+  margin-right: 0;
+}
+
+.footer__inner-social a img {
+  height: 34px;
+}
+
+.footer__inner-social a img:hover {
+  height: 45px;
+  transition: .3s;
+}
+
+.footer__inner-adress {
+  width: 230px;
+  position: relative;
+}
+
+.footer__inner-adress p {
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 16px;
+  margin-left: 50px;
+}
+
+.footer__inner-adress::after {
+  position: absolute;
+  content: url(../img/footer_map.svg);
+  top: 0;
+}
+
+.footer__inner-phone {
+  position: relative;
+}
+
+.footer__inner-phone p {
+  font-size: 16px;
+  line-height: 27px;
+  margin-left: 50px;
+}
+
+.footer__inner-phone::after {
+  position: absolute;
+  content: url(../img/footer_tel.svg);
+  top: -5px;
 }
