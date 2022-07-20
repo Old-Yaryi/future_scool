@@ -28,8 +28,13 @@ body {
 header {
   background-image: url(../img/headerbg.png);
   font-weight: 400;
-  background-position: 50% 50%;
+  background-position: center;
   background-repeat: no-repeat;
+  padding: 0 15px;
+}
+
+main {
+  padding: 0 15px;
 }
 
 button {
@@ -47,8 +52,7 @@ button {
 }
 
 section {
-  max-width: 1140px;
-  margin: 0 auto;
+  padding: 0 15px;
 }
 
 article {
@@ -107,6 +111,13 @@ footer {
   padding-top: 50px;
 }
 
+/**********container****************/
+.container {
+  max-width: 1140px;
+  /* -30px from padding <section>*/
+  margin: 0 auto;
+}
+
 /*********blocks***********/
 .header {
   margin-top: 15px;
@@ -120,6 +131,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+  position: relative;
 }
 
 .header__top::before {
@@ -261,7 +273,7 @@ footer {
 .who__items {
   display: flex;
   align-items: baseline;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-bottom: 90px;
 }
 
@@ -273,20 +285,6 @@ footer {
   font-weight: 500;
   font-size: 15px;
   line-height: 150%;
-  width: 242px;
-}
-
-.who__banner {
-  position: relative;
-  margin-bottom: 80px;
-}
-
-.who__banner_item {
-  display: flex;
-  position: relative;
-  background-color: #EFF2FD;
-  align-items: center;
-  border-radius: 25px;
 }
 
 .who__banner_item-img {
@@ -295,31 +293,52 @@ footer {
   margin-left: 20px;
 }
 
-.who__banner_item-span {
+/*********banner******************/
+.banner {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.banner__item {
+  display: flex;
+  position: relative;
+  background-color: #EFF2FD;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.banner__item-img {
+  position: absolute;
+  bottom: 17px;
+  margin-left: 20px;
+}
+
+.banner__item-span {
   width: 350px;
 }
 
-.who__banner_item-text {
+.banner__item-text {
   margin-right: 33px;
 }
 
-.who__banner_item-text h2 {
+.banner__item-text h2 {
   margin-bottom: 5px;
 }
 
-.who__banner_item-feedback_button {
+.banner__item-feedback_button {
   margin-top: 23px;
   margin-bottom: 10px;
   margin-right: 47px;
 }
 
-.who__banner_item-feedback_messenger {
+.banner__item-feedback_messenger {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  margin-left: 30px;
 }
 
-.who__banner_item-feedback_messenger p, .who__banner_item-feedback_messenger a {
+.banner__item-feedback_messenger p, .banner__item-feedback_messenger a {
   margin-right: 15px;
 }
 
@@ -452,13 +471,12 @@ footer {
 }
 
 /**********************/
-.compare_full {
-  max-width: 1920px;
-  margin: 0 auto;
+.compare {
+  background-color: #fff;
   margin-bottom: 80px;
 }
 
-.compare_full h1 {
+.compare h1 {
   margin-bottom: 60px;
 }
 
@@ -653,7 +671,7 @@ footer {
 }
 
 .price__table-inner:last-child {
-  margin-right: 0;
+  margin-right: 30px;
 }
 
 .price__table-td {
