@@ -25,14 +25,8 @@ body {
 	font-size: 15px;	
 }
 header {
-  background-image: url(../img/headerbg.png); 
+  background: linear-gradient( 180deg, #FFFFFF 0%, #EEF1FD 100%) ; 
 	font-weight: 400;
-	background-position: center;
-  background-repeat: no-repeat;
-	padding: 0 15px;
-}
-main {
-	padding: 0 15px;
 }
 button {
 	width: 273px;
@@ -48,8 +42,7 @@ button {
 	box-shadow: 0px 6px 21px rgba(104, 130, 245, 0.67);
 }
 section {
-  padding: 0 15px;
-	
+  padding: 0 15px;	
 }
 article {
 	width: 100%;
@@ -102,7 +95,7 @@ footer {
 }
 /**********container****************/
 .container {
-	max-width: 1140px; /* -30px from padding <section>*/
+	max-width: 1140px; 
 	margin: 0 auto;
 }
 
@@ -110,7 +103,10 @@ footer {
 .header {
 	margin-top: 15px;
 	height: 770px;
-	margin-bottom: 60px;
+	background-image: url(../img/elt.png);
+	background-position: center;
+  background-repeat: no-repeat;
+	background-size: 100%;
 	&__top {
 		display: flex;
 		justify-content: space-between;
@@ -190,22 +186,32 @@ footer {
 		}
 		
 	}
-	
+	&__description {
+		position: relative;
+		&-background {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+	}
+
 	&__title {
 		margin-bottom: 37px;
 		&_title {
 			font-family: 'ALSSchlangesans-Bold';
 			font-size: 84px ;
-			margin-bottom: 40px;
 			text-align: left;
+			
 			& span {
 				color: #49B3F7;
 			}	
 		}
 		& p {
-			width: 494px;
 			font-size: 17px;
 			line-height: 28px;
+			padding-top: 40px;
+			margin-bottom: 37px;
+			width: 500px;
 			& span {
 				font-weight: 700;
 			}
@@ -228,7 +234,12 @@ footer {
 			align-items: center;
 			& p, a {
 				margin-right: 15px;
+				padding-top: 0;
+				margin-bottom: 0;
 			}
+		}
+		&_p p {
+			width: 100%;
 		}
 	}
 }
@@ -658,16 +669,12 @@ footer {
 	}
 	&__inner {
 		width: 488px;
-		margin-right: 112px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		& h1 {
 			text-align: left;
 			margin-bottom: 10px;
-		}
-		&:last-child {
-			margin-right: 0;
 		}
 	}
 }
@@ -980,6 +987,47 @@ footer {
 	}
 }
 
+/*********************adaptive************/
+
+@media (max-width: 1155px){
+	h2 {font-size: 26px;
+	}
+}
+
+
+@media (max-width: 1000px) {
+	section {
+		padding: 0 50px;	
+	}
+	.container {
+		max-width: 900px; 
+	}
+	.header {
+		&__top {
+			&_feedback a{
+				font-size: 16px;
+			}
+			&_feedback button {
+				height: 50px;
+				width: 210px;
+			}
+		}
+		&__title {
+			&_title {
+			font-size: 78px;
+			}
+		}
+	}
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
 
 
 
