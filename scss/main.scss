@@ -16,11 +16,13 @@
 	font-style: normal;
 }
 						/*******global***************/
+html {
+		scroll-behavior: smooth;
+}
 body {
 	color: 	#243976;
 	font-family: 'gothampro', sans-serif;
-	font-size: 15px;
-	
+	font-size: 15px;	
 }
 header {
   background-image: url(../img/headerbg.png); 
@@ -47,6 +49,7 @@ button {
 }
 section {
   padding: 0 15px;
+	
 }
 article {
 	width: 100%;
@@ -106,11 +109,8 @@ footer {
 /*********blocks***********/
 .header {
 	margin-top: 15px;
-	position: relative;
 	height: 770px;
 	margin-bottom: 60px;
-	
-	
 	&__top {
 		display: flex;
 		justify-content: space-between;

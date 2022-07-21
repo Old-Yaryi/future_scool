@@ -19,6 +19,10 @@
 }
 
 /*******global***************/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #243976;
   font-family: 'gothampro', sans-serif;
@@ -121,7 +125,6 @@ footer {
 /*********blocks***********/
 .header {
   margin-top: 15px;
-  position: relative;
   height: 770px;
   margin-bottom: 60px;
 }
