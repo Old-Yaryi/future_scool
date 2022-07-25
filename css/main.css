@@ -44,6 +44,8 @@ button {
   font-size: 11px;
   font-weight: 700;
   line-height: 13px;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
   cursor: pointer;
   box-shadow: 0px 6px 21px rgba(104, 130, 245, 0.67);
 }
@@ -172,10 +174,19 @@ footer {
 .header__menu_account {
   display: flex;
   align-items: center;
+  font-size: 14px;
 }
 
 .header__menu_account img {
   margin-right: 10px;
+}
+
+.header__menu_phone {
+  display: none;
+}
+
+.header__menu_icon {
+  display: none;
 }
 
 .header__age {
@@ -1116,6 +1127,12 @@ footer {
   h2 {
     font-size: 26px;
   }
+  .header__description-background {
+    bottom: 60px;
+  }
+  .header__description-background img {
+    width: 50vw;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -1134,5 +1151,112 @@ footer {
   }
   .header__title_title {
     font-size: 78px;
+  }
+  .header__title p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .header__description-background {
+    bottom: 80px;
+  }
+  .header__description-background img {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 0 40px;
+  }
+  .header {
+    height: 100%;
+  }
+  .header__top_feedback a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .header__menu {
+    margin-bottom: 35px;
+  }
+  .header__menu_list li {
+    margin-right: 20px;
+  }
+  .header__age {
+    margin-bottom: 58px;
+  }
+  .header__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__description-background {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 40px;
+  }
+  .header__description-background img {
+    width: 100%;
+  }
+  .header__title {
+    text-align: center;
+  }
+  .header__title_title {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+  .header__title p {
+    text-indent: 25px;
+    width: 100%;
+    padding-top: 0;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    line-height: 165.2%;
+  }
+  .header__feedback_button::after {
+    display: none;
+  }
+  .header__feedback_messenger {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 0 20px;
+  }
+  .header__top-logo img {
+    width: 170px;
+    height: 50px;
+  }
+  .header__top_feedback {
+    display: none;
+  }
+  .header__top::before {
+    margin-bottom: 60px;
+  }
+  .header__menu_list {
+    display: none;
+  }
+  .header__menu_icon {
+    display: block;
+  }
+  .header__menu_icon::before {
+    content: url(../img/menu_burg.png);
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .header__menu_account {
+    display: none;
+  }
+  .header__age {
+    display: none;
+  }
+  .header__menu.mobile .header__menu_icon::before {
+    content: url(../img/menu_burg_close.png);
+    display: block;
+    position: absolute;
   }
 }
