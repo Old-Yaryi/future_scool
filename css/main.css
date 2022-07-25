@@ -1225,6 +1225,12 @@ footer {
   section {
     padding: 0 20px;
   }
+  .header__top {
+    background-color: #EFF2FD;
+    margin-bottom: 0;
+    padding-top: 15px;
+    margin: -15px -20px 0;
+  }
   .header__top-logo img {
     width: 170px;
     height: 50px;
@@ -1234,6 +1240,17 @@ footer {
   }
   .header__top::before {
     margin-bottom: 60px;
+  }
+  .header__menu {
+    display: flex;
+    background-color: #EFF2FD;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 47px;
+    box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
+    border-radius: 0px 0px 15px 15px;
+    margin: -15px -20px 0;
   }
   .header__menu_list {
     display: none;
@@ -1258,5 +1275,28 @@ footer {
     content: url(../img/menu_burg_close.png);
     display: block;
     position: absolute;
+  }
+  .header__menu.mobile .header__menu_list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    padding-top: 50px;
+    align-items: center;
+  }
+  .header__menu.mobile .header__menu_list li {
+    margin-bottom: 30px;
+  }
+  .header__menu.mobile .header__menu_account {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .header__menu.mobile .header__menu_phone {
+    display: block;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 118.2%;
   }
 }
