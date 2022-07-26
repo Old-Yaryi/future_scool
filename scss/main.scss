@@ -1049,6 +1049,34 @@ footer {
 			}
 		}
 	}
+	.banner__item-span {
+		width: 260px;
+	}
+	.who__items_item-img {
+		margin-bottom: 30px;
+	}
+	.who__items_item-text {
+		font-size: 14px;
+		font-weight: 700;
+	}
+	.who__banner_item-img {
+		margin-left: 10px;
+	}
+	.banner__item-text {
+		margin-right: 22px;
+	}
+	.banner__item-text h2 {
+		font-size: 26px;
+	}
+	.banner__item-text p {
+		font-size: 14px;
+	}
+	.banner__item-feedback_button {
+		width: 250px;
+		height: 61px;
+		margin-right: 20px;
+		margin-top: 15px;
+	}
 
 }
 
@@ -1123,10 +1151,8 @@ footer {
 		padding: 0 20px;
 
 	}
-	.header {
-		
+	.header {		
 		&__top {
-			background-color: #EFF2FD;
 			margin-bottom: 0;
 			padding-top: 15px;
 			margin: -15px -20px 0;
@@ -1142,15 +1168,6 @@ footer {
 			}
 		}
 		&__menu{
-			display: flex;
-			background-color: #EFF2FD;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			padding-bottom: 47px;
-			box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
-			border-radius: 0px 0px 15px 15px;
-			margin: -15px -20px 0;
 			&_list {
 				display: none;
 			}
@@ -1171,11 +1188,46 @@ footer {
 		&__age {
 			display: none;
 		}	
+		&__title {
+			&_title {
+				font-size: 40px;
+				line-height: 100%;
+				margin-bottom: 30px;
+			}
+			& p {
+				font-size: 15px;
+				letter-spacing: -0.5px;
+			}
+		}
+		&__feedback_button {
+			margin-bottom: 10px;
+		}
+
+	}
+	.header__menu.mobile {
+		display: flex;
+		background-color: #EFF2FD;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 47px;
+		box-shadow: 5px 15px 15px rgba(30, 35, 66, 0.15);
+		border-radius: 0px 0px 15px 15px;
+		margin: -5px -20px 0;
+		position: absolute;
+    width: 100%;
+    z-index: 2;
+		opacity: 0.96;
+	}
+	.header__top.mobile{
+		background-color: #EFF2FD;
+		padding-bottom: 15px;
 	}
 	.header__menu.mobile .header__menu_icon::before {
 		content: url(../img/menu_burg_close.png);
 					display: block;
-					position: absolute;				
+					position: absolute;	
+					top: -77px;			
 	}
 	.header__menu.mobile .header__menu_list {
 		display: flex;
@@ -1194,7 +1246,7 @@ footer {
 	.header__menu.mobile .header__menu_account{
 		display: flex;
 		margin-bottom: 30px;
-
+		margin-right: 40px;
 	}
 	.header__menu.mobile .header__menu_phone {
 		display: block;
@@ -1204,7 +1256,24 @@ footer {
 	}
 }
 
+@media (max-width: 415px) {
+	.header__menu.mobile .header__menu_list {
+		padding-top: 35px;
+	}
 
+}
+
+@media (max-width: 320px) {
+ .header__title_title {
+	 font-size: 34px;
+	 margin-bottom: 20px;
+ }
+ .header__feedback_button {
+	 width: 230px;
+	 height: 55px;
+ }
+
+}
 
 
 
