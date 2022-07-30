@@ -387,7 +387,7 @@ footer {
 .how__items {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   margin-right: 30px;
 }
 
@@ -396,12 +396,16 @@ footer {
 }
 
 .how__items-item {
-  margin-right: 20px;
   position: relative;
 }
 
-.how__items-item:last-child {
-  margin-right: 0;
+.how__items-item:first-child {
+  margin-bottom: 75px;
+}
+
+.how__items-item-text {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .how__items-item-text h3 {
@@ -1352,6 +1356,15 @@ footer {
   .banner__item-feedback_button {
     margin-top: 20px;
     margin-bottom: 15px;
+  }
+  .how {
+    margin-bottom: 80px;
+  }
+  .how h1 {
+    font-size: 38px;
+  }
+  .how__items {
+    flex-direction: column;
   }
 }
 
