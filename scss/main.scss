@@ -345,8 +345,7 @@ footer {
 		margin-right: 30px;
 		&:last-child {
 			margin-right: 0;
-		}
-		
+		}	
 		&-item {
 			position: relative;
 			&:first-child {
@@ -1014,7 +1013,7 @@ footer {
 
 /*********************adaptive************/
 
-@media (max-width: 1155px){
+@media (max-width: 1170px){
 	h2 {font-size: 26px;
 	}
 	.header {
@@ -1023,6 +1022,17 @@ footer {
 				bottom: 60px;
 				& img {
 					width: 50vw;
+				}
+			}
+		}
+	}
+	.how {
+		&__items {
+			&-item {
+				&-img1, &-img, &-img2 {
+					& img {
+					width: 100%;
+					}
 				}
 			}
 		}
@@ -1113,6 +1123,9 @@ footer {
 		&__items {
 			max-width: 50%;
 			&-item {
+				&:first-child {
+					margin-bottom: 20px;
+				}
 				&-img1, &-img, &-img2 {
 					& img {
 					width: 100%;
@@ -1122,7 +1135,7 @@ footer {
 					left: 70px;
 				}
 				&-text {
-					width: 200px;
+					width: 12rem;
 					& h3 { 
 					text-align: left;
 					font-size: 17px;
@@ -1154,11 +1167,16 @@ footer {
 		&-img1::before {
 			left: 0;
 			width: 280px;
-			transform: rotate(35deg);
+			padding-left: 40px;
+			transform: rotate(49deg);
 		}
 		&-img2::before {
 			left: 0;
 			width: 260px;
+			padding-left: 70px;
+		}
+		&-text {
+			width: 9rem;
 		}
 	}
 }
@@ -1257,6 +1275,7 @@ footer {
 	}
 	.banner__item-span {
 		height: 25px;
+		width: 50px;
 	}
 	.banner__item-text h2 {
 		font-size: 24px;
@@ -1275,13 +1294,38 @@ footer {
 		& h1 {
 			font-size: 38px;
 		}
+		&__line-block {
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
 		&__items {
 			flex-direction: column;
+			margin-right: 0;
 			&-item {
-				
+				&:first-child{
+					margin-bottom: 0;
+				} 
+				&-img1 {
+					&::before {
+						display: none;
+					}
+				}
+				&-img2 {
+					&::before {
+						display: none;
+					}
+				}
+				&-img1, &-img, &-img2 {
+					& img {
+					width: 80%;
+					}
+				}
 			}
 
 		}
+	}
+	.text {
+		order: 2;
 	}
 
 }

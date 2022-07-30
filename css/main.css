@@ -1142,7 +1142,7 @@ footer {
 }
 
 /*********************adaptive************/
-@media (max-width: 1155px) {
+@media (max-width: 1170px) {
   h2 {
     font-size: 26px;
   }
@@ -1151,6 +1151,9 @@ footer {
   }
   .header__description-background img {
     width: 50vw;
+  }
+  .how__items-item-img1 img, .how__items-item-img img, .how__items-item-img2 img {
+    width: 100%;
   }
 }
 
@@ -1223,6 +1226,9 @@ footer {
   .how__items {
     max-width: 50%;
   }
+  .how__items-item:first-child {
+    margin-bottom: 20px;
+  }
   .how__items-item-img1 img, .how__items-item-img img, .how__items-item-img2 img {
     width: 100%;
   }
@@ -1230,7 +1236,7 @@ footer {
     left: 70px;
   }
   .how__items-item-text {
-    width: 200px;
+    width: 12rem;
   }
   .how__items-item-text h3 {
     text-align: left;
@@ -1255,11 +1261,16 @@ footer {
   .how__items-item-img1::before {
     left: 0;
     width: 280px;
-    transform: rotate(35deg);
+    padding-left: 40px;
+    transform: rotate(49deg);
   }
   .how__items-item-img2::before {
     left: 0;
     width: 260px;
+    padding-left: 70px;
+  }
+  .how__items-item-text {
+    width: 9rem;
   }
 }
 
@@ -1345,6 +1356,7 @@ footer {
   }
   .banner__item-span {
     height: 25px;
+    width: 50px;
   }
   .banner__item-text h2 {
     font-size: 24px;
@@ -1363,8 +1375,28 @@ footer {
   .how h1 {
     font-size: 38px;
   }
+  .how__line-block {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   .how__items {
     flex-direction: column;
+    margin-right: 0;
+  }
+  .how__items-item:first-child {
+    margin-bottom: 0;
+  }
+  .how__items-item-img1::before {
+    display: none;
+  }
+  .how__items-item-img2::before {
+    display: none;
+  }
+  .how__items-item-img1 img, .how__items-item-img img, .how__items-item-img2 img {
+    width: 80%;
+  }
+  .text {
+    order: 2;
   }
 }
 
