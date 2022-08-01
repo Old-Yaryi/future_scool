@@ -406,6 +406,7 @@ footer {
 				margin-bottom: 23px;
 				padding-top: 13px;
 				padding-bottom: 13px;
+				cursor: pointer;
 				&_img {
 					margin-right: 17px;					
 				}
@@ -427,33 +428,33 @@ footer {
 				width: 44px;
 				margin-top: 19px;
 				margin-left: 20px;
-			}
-			&-inner:hover{
-				background-color: #fff;
-				box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
-				border-radius: 25px;
-				cursor: pointer;
-				transition: .5s;
-				& h3 {
-					background: linear-gradient(272.77deg, #864FF1 0%, #49B3F7 100%);
-					-webkit-background-clip: text;
-					-webkit-text-fill-color: transparent;
-					background-clip: text;
-					
-				}
-				
-			}
-			 
-			
+			}			 			
 		}	
-
+	}
+	&__img{
+		&-img {
+			display: none;
+		}
 	}
 }
-.stres {
-	margin-top: 53px;
-}
-.why_img {
+.why__img {
 	margin-left: 30px;
+}
+.why__inner-active {
+	background-color: #fff;
+	box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
+	border-radius: 25px;
+	cursor: pointer;
+	transition: .5s;
+		& h3 {
+			background: linear-gradient(272.77deg, #864FF1 0%, #49B3F7 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;					
+		}
+}
+.img-active {
+	display: block;
 }
 /**********************/
 .compare {
