@@ -1163,6 +1163,9 @@ footer {
   .how__items-item-img1 img, .how__items-item-img img, .how__items-item-img2 img {
     width: 100%;
   }
+  .why__img-img {
+    width: 50vw;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -1252,6 +1255,12 @@ footer {
     line-height: 120%;
   }
   .how__items-item-text p {
+    font-size: 14px;
+  }
+  .why h1 {
+    font-size: 40px;
+  }
+  .why__items_item-inner_text p {
     font-size: 14px;
   }
 }
