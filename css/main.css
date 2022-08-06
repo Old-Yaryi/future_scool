@@ -1167,6 +1167,12 @@ footer {
   .why__img-img {
     width: 50vw;
   }
+  .compare__items_img {
+    padding: 0;
+  }
+  .compare__items_inners-inner {
+    width: 32vw;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -1278,6 +1284,17 @@ footer {
     width: 50%;
     top: -300px;
     right: -43px;
+  }
+  .compare__items_img img {
+    width: 27vw;
+    margin-right: -90px;
+    margin-bottom: 150px;
+  }
+  .compare__items_img img.img2 img {
+    width: 27vw;
+    margin-right: 0;
+    margin-bottom: -170px;
+    margin-left: -61px;
   }
 }
 
@@ -1850,7 +1867,7 @@ footer {
   }
   .banner__item-feedback_button {
     margin: 0 0;
-    width: 100%;
+    width: 230px;
     height: 55px;
   }
   .banner__item-feedback_messenger {

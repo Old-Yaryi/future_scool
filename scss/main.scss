@@ -1042,6 +1042,14 @@ footer {
 	.why__img-img{
 		width: 50vw;
 	}
+	.compare__items {
+		&_img {
+		padding: 0;
+		}
+		&_inners-inner {
+			width: 32vw;
+		}
+	}
 }
 
 
@@ -1182,8 +1190,20 @@ footer {
 			}
 		}
 	}
-	
-		
+	// *********compare***********
+	.compare__items {
+		&_img img {
+			width: 27vw;
+			margin-right: -90px;
+			margin-bottom: 150px;
+			&.img2  img {
+				width: 27vw;
+				margin-right: 0;
+				margin-bottom: -170px;
+				margin-left: -61px;
+			}
+		}
+	}		
 
 }
 
