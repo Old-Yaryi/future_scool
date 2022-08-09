@@ -1110,7 +1110,7 @@ footer {
 		z-index: 1;
 	}
 	.girl_9-11::after {
-		right: -15%;
+		right: -4%;
 	}
 }
 
@@ -1305,6 +1305,37 @@ footer {
 			}
 		}
 	}
+	// ****price****
+	.price {
+		&__table {
+			padding-bottom: 40px;
+			&-inner {
+				& p {
+					font-size: 16px;
+				}
+			}
+		}
+		&__buttons-inner {
+			width: 220px;
+			height: 80px;
+			& h2 {
+				padding-top: 20px;
+			}
+			
+		}
+	}
+	.girl_1-4::after {
+		right: -22%;
+		z-index: 1;
+		bottom: 8px;
+	}
+	.girl_5-8::after {
+		right: -20%;
+		z-index: 1;
+	}
+	.girl_9-11::after {
+		right: -9%;
+	}
 
 }
 
@@ -1355,6 +1386,12 @@ footer {
 	.scool__banner_item-img img {
 		width: 13vh;
 	}	
+	// *****price****
+	.price {
+		&__table {
+			flex-wrap: wrap;
+		}
+	}
 }
 
 @media (max-width: 768px) {

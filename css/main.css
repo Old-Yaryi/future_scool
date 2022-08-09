@@ -1219,7 +1219,7 @@ footer {
     z-index: 1;
   }
   .girl_9-11::after {
-    right: -15%;
+    right: -4%;
   }
 }
 
@@ -1378,6 +1378,31 @@ footer {
   .scool__inner-text p {
     font-size: 14px;
   }
+  .price__table {
+    padding-bottom: 40px;
+  }
+  .price__table-inner p {
+    font-size: 16px;
+  }
+  .price__buttons-inner {
+    width: 220px;
+    height: 80px;
+  }
+  .price__buttons-inner h2 {
+    padding-top: 20px;
+  }
+  .girl_1-4::after {
+    right: -22%;
+    z-index: 1;
+    bottom: 8px;
+  }
+  .girl_5-8::after {
+    right: -20%;
+    z-index: 1;
+  }
+  .girl_9-11::after {
+    right: -9%;
+  }
 }
 
 @media (max-width: 930px) {
@@ -1420,6 +1445,9 @@ footer {
   }
   .scool__banner_item-img img {
     width: 13vh;
+  }
+  .price__table {
+    flex-wrap: wrap;
   }
 }
 
