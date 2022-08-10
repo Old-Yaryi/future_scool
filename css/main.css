@@ -1682,6 +1682,9 @@ footer {
   .scool__banner_item-img img {
     width: 21vh;
   }
+  .price h1 {
+    font-size: 38px;
+  }
   .price__table:last-child {
     margin-right: -68px;
   }
@@ -1778,6 +1781,16 @@ footer {
     margin-top: -25px;
     width: 75vw;
   }
+  .price h1 {
+    font-size: 34px;
+    margin-bottom: 80px;
+  }
+  .price__table:last-child {
+    margin-right: -35px;
+  }
+  .price__table-inner {
+    width: 70%;
+  }
   .price__tabletd-text {
     font-size: 14px;
   }
@@ -1786,13 +1799,13 @@ footer {
     margin-left: 35px;
   }
   .girl_1-4::after {
-    right: -28%;
+    right: -17%;
   }
   .girl_5-8::after {
-    right: -24%;
+    right: -15%;
   }
   .girl_9-11::after {
-    right: -31%;
+    right: -21%;
   }
 }
 
@@ -2050,6 +2063,30 @@ footer {
   .scool__banner_item-img img {
     width: 15vh;
   }
+  .price__table {
+    margin-left: -40px;
+  }
+  .price__table:last-child {
+    margin-right: 0;
+  }
+  .price__table-td_text {
+    font-size: 14px;
+  }
+  .price__table-inner {
+    margin-right: 0;
+  }
+  .price__table-inner:last-child {
+    margin-right: 0;
+  }
+  .price__table-inner.girl_5-8 {
+    margin-right: 0;
+  }
+  .girl_1-4::after {
+    right: -20%;
+  }
+  .girl_9-11::after {
+    right: -24%;
+  }
 }
 
 @media (max-width: 415px) {
@@ -2131,6 +2168,32 @@ footer {
   }
   .scool__banner_item-img img {
     width: 10vh;
+  }
+  .price h1 {
+    font-size: 28px;
+    margin-bottom: 80px;
+  }
+  .price__buttons-inner {
+    width: 100%;
+    margin-left: 0;
+  }
+  .price__table {
+    margin-left: -60px;
+  }
+  .price__table-inner {
+    padding-left: 10px;
+  }
+  .price__table-td_text {
+    letter-spacing: 0;
+  }
+  .girl_1-4::after {
+    right: -25%;
+  }
+  .girl_5-8::after {
+    right: -25%;
+  }
+  .girl_9-11::after {
+    right: -25%;
   }
 }
 

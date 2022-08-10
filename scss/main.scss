@@ -1307,6 +1307,8 @@ footer {
 	}
 	// ****price****
 	.price {
+		& h1 {
+		}
 		&__table {
 			padding-bottom: 40px;
 			&:last-child {
@@ -1663,6 +1665,9 @@ footer {
 	}	
 	// *****price*********
 	.price {
+		& h1 {
+			font-size: 38px;
+		}
 		&__table {
 			&:last-child {
 				margin-right: -68px;
@@ -1772,8 +1777,17 @@ footer {
 	}
 	// *****price*******
 	.price {
+		& h1 {
+			font-size: 34px;
+			margin-bottom: 80px;
+		}
 		&__table {
-			margin-right: 40px;
+			&:last-child {
+				margin-right: -35px;
+			}
+			&-inner {
+				width: 70%;
+			}
 			&td-text {
 				font-size: 14px;
 			}
@@ -1784,13 +1798,13 @@ footer {
 		}
 	}
 	.girl_1-4::after {
-		right: -28%;
+		right: -17%;
 	}
 	.girl_5-8::after {
-		right: -24%;
+		right: -15%;
 	}
 	.girl_9-11::after {
-		right: -31%;
+		right: -21%;
 	}
 }
 
@@ -2089,6 +2103,33 @@ footer {
 			width: 15vh;
 		}
 	}
+	// *****price*****
+	.price {
+		&__table {
+			margin-left: -40px;
+			&:last-child{
+				margin-right: 0;
+			}
+			&-td_text {
+				font-size: 14px;
+			}
+			&-inner {
+				margin-right: 0;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	.price__table-inner.girl_5-8 {
+		margin-right: 0;
+	}
+	.girl_1-4::after {
+		right: -20%;
+	}
+	.girl_9-11::after {
+		right: -24%;
+	}
 }
 		
 
@@ -2189,6 +2230,35 @@ footer {
 	}
 	.scool__banner_item-img img {
 		width: 10vh;
+	}
+	// *****price*****
+	.price {
+		& h1 {
+			font-size: 28px;
+			margin-bottom: 80px;
+		}
+		&__buttons-inner {
+			width: 100%;
+			margin-left: 0;
+		}
+		&__table {
+			margin-left: -60px;
+			&-inner {
+				padding-left: 10px;
+			}
+			&-td_text {
+				letter-spacing: 0;
+			}
+		}
+	}
+	.girl_1-4::after {
+		right: -25%;
+	}
+	.girl_5-8::after {
+		right: -25%;
+	}
+	.girl_9-11::after {
+		right: -25%;
 	}
 }
 
