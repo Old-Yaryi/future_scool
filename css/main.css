@@ -775,7 +775,7 @@ footer {
   position: absolute;
   content: url(../img/girl_9-11.png);
   bottom: 0;
-  right: -13%;
+  right: -15%;
 }
 
 /**********************/
@@ -1381,8 +1381,14 @@ footer {
   .price__table {
     padding-bottom: 40px;
   }
+  .price__table:last-child {
+    margin-right: 58px;
+  }
   .price__table-inner p {
     font-size: 16px;
+  }
+  .price__table-inner:last-child {
+    margin-right: 5px;
   }
   .price__buttons-inner {
     width: 220px;
@@ -1401,7 +1407,7 @@ footer {
     z-index: 1;
   }
   .girl_9-11::after {
-    right: -9%;
+    right: -22%;
   }
 }
 
@@ -1448,6 +1454,38 @@ footer {
   }
   .price__table {
     flex-wrap: wrap;
+  }
+  .price__table:last-child {
+    margin-right: 0;
+  }
+  .price__table-inner {
+    width: 40%;
+    margin-right: 68px;
+  }
+  .price__table-inner:last-child {
+    margin-top: 90px;
+    margin-right: 0;
+  }
+  .price__table-inner p {
+    width: 204px;
+  }
+  .price__buttons-inner {
+    margin-top: -22%;
+  }
+  .price__table-inner.girl_5-8 {
+    margin-right: 0;
+  }
+  .girl_1-4::after {
+    right: -22%;
+    z-index: 1;
+    bottom: 0;
+  }
+  .girl_5-8::after {
+    right: -17%;
+    z-index: 1;
+  }
+  .girl_9-11::after {
+    right: -25%;
   }
 }
 
@@ -1644,6 +1682,37 @@ footer {
   .scool__banner_item-img img {
     width: 21vh;
   }
+  .price__table:last-child {
+    margin-right: -68px;
+  }
+  .price__table-inner {
+    width: 60%;
+  }
+  .price__table-inner:last-child {
+    margin-right: 68px;
+  }
+  .price__table-td_text {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .price__buttons-inner {
+    margin-top: -55px;
+    width: 75%;
+    margin-left: 70px;
+  }
+  .price__table-inner.girl_5-8 {
+    margin-right: 68px;
+    margin-top: 90px;
+  }
+  .girl_1-4::after {
+    right: -8%;
+  }
+  .girl_5-8::after {
+    right: -8%;
+  }
+  .girl_9-11::after {
+    right: -8%;
+  }
 }
 
 @media (max-width: 560px) {
@@ -1708,6 +1777,22 @@ footer {
     margin-left: 0px;
     margin-top: -25px;
     width: 75vw;
+  }
+  .price__tabletd-text {
+    font-size: 14px;
+  }
+  .price__buttons-inner {
+    width: 85%;
+    margin-left: 35px;
+  }
+  .girl_1-4::after {
+    right: -28%;
+  }
+  .girl_5-8::after {
+    right: -24%;
+  }
+  .girl_9-11::after {
+    right: -31%;
   }
 }
 

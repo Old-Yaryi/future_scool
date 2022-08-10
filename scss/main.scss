@@ -688,7 +688,7 @@ footer {
 	position: absolute;
 	content: url(../img/girl_9-11.png);
 	bottom: 0;
-	right: -13%;
+	right: -15%;
 }
 /**********************/
 .certificate {
@@ -1309,9 +1309,15 @@ footer {
 	.price {
 		&__table {
 			padding-bottom: 40px;
+			&:last-child {
+				margin-right: 58px;
+			}
 			&-inner {
 				& p {
 					font-size: 16px;
+				}
+				&:last-child {
+					margin-right: 5px;
 				}
 			}
 		}
@@ -1334,7 +1340,7 @@ footer {
 		z-index: 1;
 	}
 	.girl_9-11::after {
-		right: -9%;
+		right: -22%;
 	}
 
 }
@@ -1390,7 +1396,39 @@ footer {
 	.price {
 		&__table {
 			flex-wrap: wrap;
+			&:last-child {
+				margin-right: 0;
+			}
+			&-inner {
+				width: 40%;
+				margin-right: 68px;
+				&:last-child {
+					margin-top: 90px;
+					margin-right: 0;
+				}
+				& p {
+					width: 204px;
+				}
+			}
 		}
+		&__buttons-inner {
+			margin-top: -22%;
+		}
+	}
+	.price__table-inner.girl_5-8 {
+		margin-right: 0;
+	}
+	.girl_1-4::after {
+		right: -22%;
+		z-index: 1;
+		bottom: 0;
+	}
+	.girl_5-8::after {
+		right: -17%;
+		z-index: 1;
+	}
+	.girl_9-11::after {
+		right: -25%;
 	}
 }
 
@@ -1623,6 +1661,42 @@ footer {
 		width: 21vh;
 		}
 	}	
+	// *****price*********
+	.price {
+		&__table {
+			&:last-child {
+				margin-right: -68px;
+			}
+			&-inner {
+				width: 60%;
+				&:last-child {
+					margin-right: 68px;
+				}
+			}
+			&-td_text {
+				font-size: 15px;
+				letter-spacing: 1px;
+			}
+		}
+		&__buttons-inner {
+			margin-top: -55px;
+			width: 75%;
+			margin-left: 70px;
+		}
+	}
+	.price__table-inner.girl_5-8 {
+		margin-right: 68px;
+		margin-top: 90px;
+	}
+	.girl_1-4::after {
+		right: -8%;
+	}
+	.girl_5-8::after {
+		right: -8%;
+	}
+	.girl_9-11::after {
+		right: -8%;
+	}
 }
 
 
@@ -1695,6 +1769,28 @@ footer {
     margin-left: 0px;
     margin-top: -25px;
 		width: 75vw;
+	}
+	// *****price*******
+	.price {
+		&__table {
+			margin-right: 40px;
+			&td-text {
+				font-size: 14px;
+			}
+		}
+		&__buttons-inner {
+			width: 85%;
+			margin-left: 35px;
+		}
+	}
+	.girl_1-4::after {
+		right: -28%;
+	}
+	.girl_5-8::after {
+		right: -24%;
+	}
+	.girl_9-11::after {
+		right: -31%;
 	}
 }
 
