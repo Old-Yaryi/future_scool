@@ -1409,6 +1409,17 @@ footer {
   .girl_9-11::after {
     right: -22%;
   }
+  .certificate__inner h1 {
+    font-size: 40px;
+    margin-bottom: 36px;
+  }
+  .certificate__inner p {
+    font-size: 18px;
+    letter-spacing: -0.5px;
+  }
+  .certificate__inner img {
+    width: 90%;
+  }
 }
 
 @media (max-width: 930px) {

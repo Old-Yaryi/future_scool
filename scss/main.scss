@@ -1344,6 +1344,22 @@ footer {
 	.girl_9-11::after {
 		right: -22%;
 	}
+	// ************
+	.certificate {
+		&__inner {
+			& h1 {
+				font-size: 40px;
+				margin-bottom: 36px;
+			}
+			& p {
+				font-size: 18px;
+				letter-spacing: -0.5px;
+			}
+			& img {
+				width: 90%;
+			}
+		}
+	}
 
 }
 
