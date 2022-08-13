@@ -801,6 +801,10 @@ footer {
   margin-bottom: 10px;
 }
 
+.certificate__inner p {
+  font-size: 20px;
+}
+
 /**********************/
 .comment {
   background-color: #fff;
@@ -1221,6 +1225,9 @@ footer {
   .girl_9-11::after {
     right: -4%;
   }
+  .certificate__inner h1 {
+    margin-bottom: 36px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -1408,6 +1415,9 @@ footer {
   }
   .girl_9-11::after {
     right: -22%;
+  }
+  .certificate__inner {
+    align-items: center;
   }
   .certificate__inner h1 {
     font-size: 40px;
@@ -1727,6 +1737,27 @@ footer {
   .girl_9-11::after {
     right: -8%;
   }
+  .certificate {
+    padding-top: 40px;
+  }
+  .certificate__item {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .certificate__inner {
+    text-align: center;
+    align-items: center;
+  }
+  .certificate__inner h1 {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .certificate__inner p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 103.2%;
+  }
 }
 
 @media (max-width: 560px) {
@@ -1817,6 +1848,12 @@ footer {
   }
   .girl_9-11::after {
     right: -21%;
+  }
+  .certificate__inner h1 {
+    font-size: 36px;
+  }
+  .certificate img {
+    width: 85%;
   }
 }
 
@@ -2098,6 +2135,15 @@ footer {
   .girl_9-11::after {
     right: -24%;
   }
+  .certificate {
+    margin-bottom: 70px;
+  }
+  .certificate__inner h1 {
+    font-size: 34px;
+  }
+  .certificate img {
+    width: 75%;
+  }
 }
 
 @media (max-width: 415px) {
@@ -2205,6 +2251,18 @@ footer {
   }
   .girl_9-11::after {
     right: -25%;
+  }
+  .certificate {
+    margin-bottom: 50px;
+    padding-top: 50px;
+  }
+  .certificate__inner p {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    line-height: 130%;
+  }
+  .certificate img {
+    width: 75%;
   }
 }
 
@@ -2348,5 +2406,16 @@ footer {
   }
   .scool__banner_item-img img {
     width: 11vh;
+  }
+  .certificate__inner h1 {
+    font-size: 28px;
+  }
+  .certificate__inner p {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    line-height: 103.2%;
+  }
+  .certificate img {
+    width: 90%;
   }
 }

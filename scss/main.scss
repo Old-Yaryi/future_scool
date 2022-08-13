@@ -707,6 +707,9 @@ footer {
 			text-align: left;
 			margin-bottom: 10px;
 		}
+		& p {
+			font-size: 20px;
+		}
 	}
 }
 /**********************/
@@ -1112,6 +1115,14 @@ footer {
 	.girl_9-11::after {
 		right: -4%;
 	}
+	// ****certificate******
+	.certificate {
+		&__inner {
+			& h1 {
+				margin-bottom: 36px;
+			}
+		}
+	}
 }
 
 
@@ -1307,8 +1318,6 @@ footer {
 	}
 	// ****price****
 	.price {
-		& h1 {
-		}
 		&__table {
 			padding-bottom: 40px;
 			&:last-child {
@@ -1347,6 +1356,7 @@ footer {
 	// ************
 	.certificate {
 		&__inner {
+			align-items: center;
 			& h1 {
 				font-size: 40px;
 				margin-bottom: 36px;
@@ -1448,6 +1458,7 @@ footer {
 	.girl_9-11::after {
 		right: -25%;
 	}
+
 }
 
 @media (max-width: 768px) {
@@ -1718,6 +1729,28 @@ footer {
 	.girl_9-11::after {
 		right: -8%;
 	}
+	// ******certificate******
+	.certificate {
+		padding-top: 40px;
+		&__item {
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		&__inner {
+			text-align: center;
+			align-items: center;
+			& h1 {
+				font-size: 38px;
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			& p {
+				font-size: 20px;
+				margin-bottom: 30px;
+				line-height: 103.2%;
+			}
+		}
+	}
 }
 
 
@@ -1821,6 +1854,17 @@ footer {
 	}
 	.girl_9-11::after {
 		right: -21%;
+	}
+	// ******certificate******
+	.certificate {
+		&__inner {
+			& h1 {
+				font-size: 36px;
+			}
+		}
+		& img {
+			width: 85%;
+		}
 	}
 }
 
@@ -2146,6 +2190,18 @@ footer {
 	.girl_9-11::after {
 		right: -24%;
 	}
+	// *******certidicate*****
+	.certificate {
+		margin-bottom: 70px;
+		&__inner {
+			& h1 {
+				font-size: 34px;
+			}
+		}
+		& img {
+			width: 75%;
+		}
+	}
 }
 		
 
@@ -2275,6 +2331,21 @@ footer {
 	}
 	.girl_9-11::after {
 		right: -25%;
+	}
+	// *******certidicate*****
+	.certificate {
+		margin-bottom: 50px;
+		padding-top: 50px;
+		&__inner {
+			& p{
+				font-size: 15px;
+				letter-spacing: 1.5px;
+				line-height: 130%;
+			}
+		}
+		& img {
+			width: 75%;
+		}
 	}
 }
 
@@ -2448,6 +2519,22 @@ footer {
 		margin-left: 90px;
 		& img {
 			width: 11vh;
+		}
+	}
+	// *******certidicate*****
+	.certificate {
+		&__inner {
+			& h1 {
+				font-size: 28px;
+			}
+			& p{
+				font-size: 16px;
+				letter-spacing: 1.5px;
+				line-height: 103.2%;
+			}
+		}
+		& img {
+			width: 90%;
 		}
 	}
 	
