@@ -526,7 +526,6 @@ footer {
 		}
 	}	
 }
-
 /**********************/
 .scool {
 	margin-bottom: 80px;		
@@ -572,8 +571,6 @@ footer {
     bottom: 17px;
     margin-left: 20px;
 }
-
-
 /**********************/
 .price {
 	text-align: center;
@@ -715,6 +712,9 @@ footer {
 /**********************/
 .comment {
 	background-color: #fff;
+	background: url(../img/comment_bcg.png);
+	background-repeat: no-repeat;
+	background-position: center;
 	& h1 {
 		margin-bottom: 60px;
 	}
@@ -722,7 +722,7 @@ footer {
 
 /**********настройки слайдера***********/
 .slider {
-	background: url(../img/comment_bcg.png);
+	// background: url(../img/comment_bcg.png);
 	background-repeat: no-repeat;
 	padding: 100px 0;
 	position: relative;
@@ -730,17 +730,26 @@ footer {
 	background-position: center ;
 	margin-bottom: 180px;
 	&__img {
-		margin: 0 350px;
-	
+	 margin: 0 350px;
+	}
+	.slick-slide {
+		float: right;
 	}
 	
 }
-.slick-list {
-	overflow: hidden;
-}
-.slick-track {
-	display: flex;
-}
+// .slick-slider {
+// 	margin: 0 auto;
+// }
+// .slick-list {
+// 	overflow: hidden;
+// }
+// .slick-track {
+// 	display: flex;
+//  	justify-content: center;
+// }
+// .slick-center {
+// 	margin-left: 350px;
+// }
 .slick-arrow {
 	position: absolute;
 	bottom: -100px;
@@ -1022,6 +1031,17 @@ footer {
 }
 
 /*********************adaptive************/
+@media (max-width: 1415px){
+	.slider {
+		padding: 0;
+	}
+	.slick-track {
+		top: 140px;
+	}
+	.slick-arrow {
+		bottom: 0;
+	}
+}
 
 @media (max-width: 1170px){
 	h2 {font-size: 26px;
@@ -1123,6 +1143,23 @@ footer {
 			}
 		}
 	}
+	// ****comment****
+	.slider {
+		padding: 100px 0;
+		margin-top: 100px;
+	}
+	.slick-arrow {
+		bottom: -100px;
+	}
+	.slick-track {
+		top: 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.slider__img {
+    margin: 0 350px;
+}
 }
 
 
@@ -1370,7 +1407,10 @@ footer {
 			}
 		}
 	}
-
+	//************
+	.slick-list {
+		top: -100px;
+	}  
 }
 
 @media (max-width: 930px) {
@@ -1751,6 +1791,27 @@ footer {
 			}
 		}
 	}
+	// ******comment*****
+	// .slider {
+	// 	margin-top: 0;
+	// 	padding: 0;
+	// }
+	.slick-list {
+		top: 0;
+	}
+	// .slick-track {
+	// 	display: block;
+	// }
+	.slick-arrow {
+		bottom: 0;
+	}
+	.slick-next {
+		right: 35%;
+	}
+	.slick-prev {
+		left: 35%;
+	}
+	
 }
 
 

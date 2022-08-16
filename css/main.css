@@ -808,6 +808,9 @@ footer {
 /**********************/
 .comment {
   background-color: #fff;
+  background: url(../img/comment_bcg.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .comment h1 {
@@ -816,7 +819,6 @@ footer {
 
 /**********настройки слайдера***********/
 .slider {
-  background: url(../img/comment_bcg.png);
   background-repeat: no-repeat;
   padding: 100px 0;
   position: relative;
@@ -829,12 +831,8 @@ footer {
   margin: 0 350px;
 }
 
-.slick-list {
-  overflow: hidden;
-}
-
-.slick-track {
-  display: flex;
+.slider .slick-slide {
+  float: right;
 }
 
 .slick-arrow {
@@ -1156,6 +1154,18 @@ footer {
 }
 
 /*********************adaptive************/
+@media (max-width: 1415px) {
+  .slider {
+    padding: 0;
+  }
+  .slick-track {
+    top: 140px;
+  }
+  .slick-arrow {
+    bottom: 0;
+  }
+}
+
 @media (max-width: 1170px) {
   h2 {
     font-size: 26px;
@@ -1227,6 +1237,22 @@ footer {
   }
   .certificate__inner h1 {
     margin-bottom: 36px;
+  }
+  .slider {
+    padding: 100px 0;
+    margin-top: 100px;
+  }
+  .slick-arrow {
+    bottom: -100px;
+  }
+  .slick-track {
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .slider__img {
+    margin: 0 350px;
   }
 }
 
@@ -1429,6 +1455,9 @@ footer {
   }
   .certificate__inner img {
     width: 90%;
+  }
+  .slick-list {
+    top: -100px;
   }
 }
 
@@ -1757,6 +1786,18 @@ footer {
     font-size: 20px;
     margin-bottom: 30px;
     line-height: 103.2%;
+  }
+  .slick-list {
+    top: 0;
+  }
+  .slick-arrow {
+    bottom: 0;
+  }
+  .slick-next {
+    right: 35%;
+  }
+  .slick-prev {
+    left: 35%;
   }
 }
 
