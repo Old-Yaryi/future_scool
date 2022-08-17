@@ -1,8 +1,9 @@
 
 // ***************slider_Jq*********
 $(document).ready(function(){
-  $('.slider').slick({
+  $('.comment__slider').slick({
     
+      // infinite: false,
       centerMode: true,
       centerPadding: '50px',
       arrows: true,
@@ -16,7 +17,8 @@ $(document).ready(function(){
             arrows: true,
             centerMode: true,
             centerPadding: '50px',
-            slidesToShow: 2
+            slidesToShow: 2,
+            slidesToScroll: 1
            }
          },
         
