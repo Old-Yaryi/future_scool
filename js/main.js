@@ -3,47 +3,49 @@
 $(document).ready(function(){
   $('.comment__slider').slick({
     
-      // infinite: false,
+      infinite: true,
       centerMode: true,
       centerPadding: '50px',
-      arrows: true,
-      dots: false,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      responsive: [
-         {
-            breakpoint: 1170,
-            settings: {
-            arrows: true,
-            centerMode: true,
-            centerPadding: '50px',
-            slidesToShow: 2,
-            slidesToScroll: 1
-           }
-         },
+  //     arrows: true,
+  //     dots: false,
+      slidesToShow: 3,
+      slidesToScroll: 2,
+      // autoplay: true,
+      // autoplaySpeed: 2000
+  //     responsive: [
+  //        {
+  //           breakpoint: 1170,
+  //           settings: {
+  //           arrows: true,
+  //           centerMode: true,
+  //           centerPadding: '50px',
+  //           slidesToShow: 2,
+  //           slidesToScroll: 2
+  //          }
+  //        },
         
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: true,
-            centerMode: true,
-            centerPadding: '90px',
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: true,
-            // centerMode: true,
-            centerPadding: '90px',
-            slidesToShow: 3
-          }
-        }
-      ]
+  //       {
+  //         breakpoint: 769,
+  //         settings: {
+  //           arrows: true,
+  //           centerMode: true,
+  //           centerPadding: '20px',
+  //           slidesToShow: 1,
+  //           slidesToScroll: 1
+  //         }
+  //       },
+  //       {
+  //         breakpoint: 480,
+  //         settings: {
+  //           arrows: true,
+  //           // centerMode: true,
+  //           centerPadding: '90px',
+  //           slidesToShow: 3
+  //         }
+  //       }
+  //     ]
     
-  });
+   });
 });
 // ************accordeon**********
 const faq_item = document.querySelectorAll('.faq__items');
