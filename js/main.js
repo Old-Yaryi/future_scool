@@ -31,7 +31,7 @@ $(document).ready(function(){
             arrows: true,
             // centerMode: true,
             centerPadding: '90px',
-            slidesToShow: 3
+            slidesToShow: 1
           }
         }
       ]

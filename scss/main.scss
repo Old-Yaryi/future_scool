@@ -1979,6 +1979,52 @@ footer {
 			width: 85%;
 		}
 	}
+	// *********comment******
+	.comment {
+		margin-bottom: 30px;
+		& h1 {
+			font-size: 36px;
+		}
+		&__slider {
+			margin-top: 50px;
+			&-item {
+				min-height: 210px;
+			}
+			&-inner {
+				flex-direction: column;
+			}
+			&-info {
+				position: relative;
+				width: 100%;
+				margin-bottom: -20px;
+			}
+			&-name {
+				position: absolute;
+				top: 5px;
+				left: 50px;
+				font-size: 16px;
+			}
+			&-status {
+				position: absolute;
+				top: 25px;
+				left: 50px;
+				font-size: 14px;
+			}
+			&-comment {
+				font-size: 12px;
+			}
+
+		}
+		.slick-arrow {
+			bottom: -100px;
+		}
+		.slick-prev {
+			background-size: 80%;
+		}
+		.slick-next {
+			background-size: 80%;
+		}
+	}
 }
 
 
