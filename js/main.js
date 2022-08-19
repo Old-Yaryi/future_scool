@@ -3,47 +3,38 @@
 $(document).ready(function(){
   $('.comment__slider').slick({
     
-      infinite: true,
+      // infinite: true,
       centerMode: true,
-      centerPadding: '50px',
+      centerPadding: '0px',
   //     arrows: true,
   //     dots: false,
       slidesToShow: 3,
       slidesToScroll: 2,
       // autoplay: true,
       // autoplaySpeed: 2000
-  //     responsive: [
-  //        {
-  //           breakpoint: 1170,
-  //           settings: {
-  //           arrows: true,
-  //           centerMode: true,
-  //           centerPadding: '50px',
-  //           slidesToShow: 2,
-  //           slidesToScroll: 2
-  //          }
-  //        },
+      responsive: [
+         
         
-  //       {
-  //         breakpoint: 769,
-  //         settings: {
-  //           arrows: true,
-  //           centerMode: true,
-  //           centerPadding: '20px',
-  //           slidesToShow: 1,
-  //           slidesToScroll: 1
-  //         }
-  //       },
-  //       {
-  //         breakpoint: 480,
-  //         settings: {
-  //           arrows: true,
-  //           // centerMode: true,
-  //           centerPadding: '90px',
-  //           slidesToShow: 3
-  //         }
-  //       }
-  //     ]
+        {
+          breakpoint: 931,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '20px',
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: true,
+            // centerMode: true,
+            centerPadding: '90px',
+            slidesToShow: 3
+          }
+        }
+      ]
     
    });
 });

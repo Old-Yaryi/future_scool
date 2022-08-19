@@ -887,6 +887,10 @@ footer {
   column-gap: 5%;
 }
 
+.slider__wrapper {
+  margin-bottom: 20px;
+}
+
 .slick-arrow {
   position: absolute;
   bottom: -200px;
@@ -1206,6 +1210,12 @@ footer {
 }
 
 /*********************adaptive************/
+@media (max-width: 1355px) {
+  .slick-track {
+    column-gap: 6%;
+  }
+}
+
 @media (max-width: 1170px) {
   h2 {
     font-size: 26px;
@@ -1277,6 +1287,10 @@ footer {
   }
   .certificate__inner h1 {
     margin-bottom: 36px;
+  }
+  .slick-track {
+    column-gap: 8%;
+    margin-left: -40%;
   }
 }
 
@@ -1489,6 +1503,10 @@ footer {
   .comment__slider {
     margin-top: 140px;
   }
+  .slick-track {
+    column-gap: 9%;
+    margin-left: 10%;
+  }
 }
 
 @media (max-width: 930px) {
@@ -1566,6 +1584,9 @@ footer {
   }
   .girl_9-11::after {
     right: -25%;
+  }
+  .slick-track {
+    display: block;
   }
 }
 
@@ -1817,6 +1838,25 @@ footer {
     margin-bottom: 30px;
     line-height: 103.2%;
   }
+  .comment h1 {
+    font-size: 38px;
+  }
+  .comment__slider {
+    margin-bottom: 135px;
+  }
+  .comment__slider-item {
+    width: 80%;
+    padding: 20px;
+  }
+  .comment__slider-inner {
+    column-gap: 10px;
+  }
+  .comment__slider-name {
+    line-height: 103%;
+  }
+  .slick-arrow {
+    bottom: -130px;
+  }
   .slick-prev {
     left: 35%;
   }
@@ -1826,8 +1866,8 @@ footer {
 }
 
 @media (max-width: 650px) {
-  .comment__slider-item {
-    width: 90vw;
+  .comment__slider-info {
+    text-align: left;
   }
 }
 

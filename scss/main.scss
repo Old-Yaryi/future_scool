@@ -775,11 +775,19 @@ footer {
 	}
 }
 /**********настройки слайдера***********/
+
 .slick-track {
-	// display: flex;
+	display: flex;
 	justify-content: space-between;
 	column-gap: 5%;
 }
+// .slick-slide {
+// 	padding: 0 50px;
+// }
+.slider__wrapper {
+	margin-bottom: 20px;
+}
+
 // .slider__wrapper {
 // 	width: 617px;
 // }
@@ -1064,11 +1072,11 @@ footer {
 }
 
 /*********************adaptive************/
-// @media (max-width: 1355px){
-// 	.slick-track {
-// 		margin-left: -215px;
-// 	}
-// }
+@media (max-width: 1355px){
+	.slick-track {
+		column-gap: 6%;
+	}
+}
 
 @media (max-width: 1170px){
 	h2 {font-size: 26px;
@@ -1171,22 +1179,10 @@ footer {
 		}
 	}
 	// ****comment****
-	// .slider {
-	// 	padding: 100px 0;
-	// 	margin-top: 100px;
-	// }
-	// .slick-arrow {
-	// 	bottom: -100px;
-	// }
-
-	// .slick-track {
-	// 	margin-left: 250px;
-	// }
-
-
-	// .slider__img {
-  //   margin: 0 350px;
-	// }
+	.slick-track {
+		column-gap: 8%;
+		margin-left: -40%;
+	}
 }
 
 
@@ -1444,9 +1440,10 @@ footer {
 			margin-top: 140px;
 		}
 	}
-	// .slick-track {
-	// 	margin-left: 0;
-	// } 
+	.slick-track {
+		column-gap: 9%;
+		margin-left: 10%;
+	}
 }
 
 @media (max-width: 930px) {
@@ -1535,9 +1532,9 @@ footer {
 		right: -25%;
 	}
 	// ****comment******
-	// .slick-track {
-	// 	margin-left: -125px;
-	// }
+	.slick-track {
+		display: block;
+	}
 
 }
 
@@ -1832,10 +1829,27 @@ footer {
 		}
 	}
 	// ******comment*****
-	// .slick-track {
-	// 	// margin-left: 250px;
-	// 	justify-content: center;
-	// }	
+	.comment {
+		& h1 {
+			font-size: 38px;
+		}
+		&__slider {
+			margin-bottom: 135px;
+			&-item {
+				width: 80%;
+				padding: 20px;
+			}
+			&-inner {
+				column-gap: 10px;
+			}
+			&-name {
+				line-height: 103%;
+			}
+		}			
+	}
+	.slick-arrow {
+		bottom: -130px;
+	}
 	.slick-prev {
 		left: 35%;
 	}
@@ -1844,12 +1858,13 @@ footer {
 	}
 }
 @media (max-width: 650px){
-	.comment__slider-item {
-		width: 90vw;
+	.comment__slider {
+		&-info {
+			text-align: left;
+		}
+		
 	}
-	// .slick-track {
-	// 	margin-left: 125px;
-	// }
+	
 }
 
 @media (max-width: 560px) {
