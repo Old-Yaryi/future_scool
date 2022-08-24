@@ -1977,6 +1977,9 @@ footer {
   }
   .comment__slider-item {
     min-height: 210px;
+    width: 85%;
+    background-size: 40%;
+    padding-left: 15px;
   }
   .comment__slider-inner {
     flex-direction: column;
@@ -2298,6 +2301,33 @@ footer {
   }
   .certificate img {
     width: 75%;
+  }
+  .comment {
+    background-size: 85vw;
+  }
+  .comment h1 {
+    font-size: 34px;
+  }
+  .comment__slider {
+    margin-top: 60px;
+  }
+  .comment__slider-text {
+    width: 100%;
+  }
+  .comment .slick-prev {
+    background-size: 75%;
+  }
+  .comment .slick-next {
+    background-size: 75%;
+  }
+  .comment .slick-arrow {
+    bottom: -125px;
+  }
+  .slick-prev {
+    left: 30%;
+  }
+  .slick-next {
+    right: 30%;
   }
 }
 

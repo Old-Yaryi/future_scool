@@ -1989,6 +1989,9 @@ footer {
 			margin-top: 50px;
 			&-item {
 				min-height: 210px;
+				width: 85%;
+				background-size: 40%;
+				padding-left: 15px;
 			}
 			&-inner {
 				flex-direction: column;
@@ -2360,6 +2363,35 @@ footer {
 		& img {
 			width: 75%;
 		}
+	}
+	// *******comment*****
+	.comment {
+		background-size: 85vw;
+		& h1 {
+			font-size: 34px;
+		}
+		&__slider {
+			margin-top: 60px;
+			&-text {
+				width: 100%;
+			}
+		}
+		& .slick-prev {
+			background-size: 75%;
+		}
+		& .slick-next {
+			background-size: 75%;
+		}
+		& .slick-arrow {
+			bottom: -125px;
+		}
+	}
+	
+	.slick-prev {
+		left: 30%;
+	}
+	.slick-next {
+		right: 30%;
 	}
 }
 		
