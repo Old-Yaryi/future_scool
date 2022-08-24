@@ -766,7 +766,6 @@ footer {
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			background-clip: text;
-
 		}
 		&-comment {
 			font-size: 16px;
@@ -775,22 +774,14 @@ footer {
 	}
 }
 /**********настройки слайдера***********/
-
 .slick-track {
 	display: flex;
 	justify-content: space-between;
 	column-gap: 5%;
 }
-// .slick-slide {
-// 	padding: 0 50px;
-// }
 .slider__wrapper {
 	margin-bottom: 20px;
 }
-
-// .slider__wrapper {
-// 	width: 617px;
-// }
 .slick-arrow {
 	position: absolute;
 	bottom: -200px;
@@ -860,7 +851,6 @@ footer {
 		}		
 	}
 }
-
 .faq__items.active .faq__item::before {
 	content: url(../img/faq_btn_close.svg);
 }
@@ -871,7 +861,6 @@ footer {
 .faq__items.active .faq__inner::after {
 	width: 25px;
 }
- 
 /********************************/
 .cta {
 	margin-bottom: 100px;
@@ -966,7 +955,6 @@ footer {
 		
 	}
 }
-
 /********************************/
 .footer {
 	&__item {
@@ -1070,14 +1058,12 @@ footer {
 		}
 	}
 }
-
 /*********************adaptive************/
 @media (max-width: 1355px){
 	.slick-track {
 		column-gap: 6%;
 	}
 }
-
 @media (max-width: 1170px){
 	h2 {font-size: 26px;
 	}
@@ -1117,8 +1103,7 @@ footer {
 		}
 		& ul li {
 			font-size: 16px;
-		}
-		
+		}	
 	}
 	.scool {
 		&__inner {
@@ -1127,7 +1112,6 @@ footer {
 				height: 17vw;
 			}
 		}
-
 	}
 	.price {
 		& h1 {
@@ -1184,8 +1168,6 @@ footer {
 		margin-left: -40%;
 	}
 }
-
-
 @media (max-width: 1000px) {
 	header {
 		margin-bottom: 70px;
@@ -1445,7 +1427,6 @@ footer {
 		margin-left: 10%;
 	}
 }
-
 @media (max-width: 930px) {
 	.banner__item-text h2 {
     font-size: 20px;
@@ -1535,9 +1516,7 @@ footer {
 	.slick-track {
 		display: block;
 	}
-
 }
-
 @media (max-width: 768px) {
 	header {
 		margin-bottom: 60px;
@@ -1861,12 +1840,9 @@ footer {
 	.comment__slider {
 		&-info {
 			text-align: left;
-		}
-		
-	}
-	
+		}		
+	}	
 }
-
 @media (max-width: 560px) {
 	.header__menu_account  {
 		flex-direction: column;
@@ -2029,8 +2005,6 @@ footer {
 		}
 	}
 }
-
-
 @media (max-width: 480px) {
 	section {
 		padding: 0 20px;
@@ -2318,7 +2292,6 @@ footer {
 			}
 		}
 	}
-
 	.scool__banner_item-img {
 		top: 30px;
 		& img {
@@ -2385,17 +2358,14 @@ footer {
 		& .slick-arrow {
 			bottom: -125px;
 		}
-	}
-	
+	}	
 	.slick-prev {
 		left: 30%;
 	}
 	.slick-next {
 		right: 30%;
 	}
-}
-		
-
+}		
 @media (max-width: 415px) {
 	header {
 		margin-bottom: 40px;
@@ -2538,8 +2508,29 @@ footer {
 			width: 75%;
 		}
 	}
+	// ****coment*****
+	.comment {
+		margin-bottom: 30px;
+		background-size: 95vw;
+		&__slider {			
+			&-item {
+				min-height: 295px;
+			}
+			&-info {
+				margin-bottom: 0;
+			}
+		}
+		& .slick-arrow {
+			bottom: -80px;
+		}
+	}
+	.slick-prev {
+		left: 30%;
+	}
+	.slick-next {
+		right: 30%;
+	}
 }
-
 @media (max-width: 320px) {
 	header {
 		margin-bottom: 40px;
@@ -2568,7 +2559,6 @@ footer {
 		padding-top: 10px;
 		
 	}
-	
 	// *****************
 	.banner__item {
 		padding-left: 30px;
@@ -2727,6 +2717,22 @@ footer {
 		& img {
 			width: 90%;
 		}
+	}
+	// *****comment******
+	.comment {
+		& h1 {
+			font-size: 28px;
+		}
+		&__slider {
+			margin-bottom: 90px;
+			margin-top: 30px;
+		}
+	}
+	.slick-prev {
+		left: 25%;
+	}
+	.slick-next {
+		right: 25%;
 	}
 }
 	

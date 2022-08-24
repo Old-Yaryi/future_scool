@@ -2449,6 +2449,25 @@ footer {
   .certificate img {
     width: 75%;
   }
+  .comment {
+    margin-bottom: 30px;
+    background-size: 95vw;
+  }
+  .comment__slider-item {
+    min-height: 295px;
+  }
+  .comment__slider-info {
+    margin-bottom: 0;
+  }
+  .comment .slick-arrow {
+    bottom: -80px;
+  }
+  .slick-prev {
+    left: 30%;
+  }
+  .slick-next {
+    right: 30%;
+  }
 }
 
 @media (max-width: 320px) {
@@ -2602,5 +2621,18 @@ footer {
   }
   .certificate img {
     width: 90%;
+  }
+  .comment h1 {
+    font-size: 28px;
+  }
+  .comment__slider {
+    margin-bottom: 90px;
+    margin-top: 30px;
+  }
+  .slick-prev {
+    left: 25%;
+  }
+  .slick-next {
+    right: 25%;
   }
 }
