@@ -30,12 +30,6 @@ body {
   line-height: 103.2%;
 }
 
-header {
-  background: linear-gradient(180deg, #FFFFFF 0%, #EEF1FD 100%);
-  font-weight: 400;
-  margin-bottom: 60px;
-}
-
 button {
   width: 273px;
   height: 67px;
@@ -50,16 +44,6 @@ button {
   text-transform: uppercase;
   cursor: pointer;
   box-shadow: 0px 6px 21px rgba(104, 130, 245, 0.67);
-}
-
-section {
-  padding: 0 15px;
-}
-
-article {
-  width: 100%;
-  background-color: #EFF2FD;
-  margin: 0 auto;
 }
 
 h1 {
@@ -107,6 +91,12 @@ input[type="radio"]:focus {
   visibility: hidden;
 }
 
+header {
+  background: linear-gradient(180deg, #FFFFFF 0%, #EEF1FD 100%);
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
 footer {
   background: #EFF2FD;
   padding-top: 50px;
@@ -115,6 +105,16 @@ footer {
 /**********container****************/
 .container {
   max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 0 15px;
+}
+
+article {
+  width: 100%;
+  background-color: #EFF2FD;
   margin: 0 auto;
 }
 
@@ -292,7 +292,7 @@ footer {
   width: 100%;
 }
 
-/**********************/
+/**********WHO************/
 .who__title {
   text-align: center;
   margin-bottom: 60px;
@@ -375,7 +375,7 @@ footer {
   margin-right: 15px;
 }
 
-/**********************/
+/******HOW****************/
 .how {
   margin-bottom: 50px;
 }
@@ -447,7 +447,7 @@ footer {
   z-index: -1;
 }
 
-/**********************/
+/*********WHY*************/
 .why {
   margin-bottom: 80px;
 }
@@ -525,7 +525,7 @@ footer {
   transition: .5s;
 }
 
-/**********************/
+/**********COMPARE************/
 .compare {
   background-color: #fff;
   margin-bottom: 80px;
@@ -597,7 +597,7 @@ footer {
   color: #fff;
 }
 
-/**********************/
+/**********SCOOL************/
 .scool {
   margin-bottom: 80px;
 }
@@ -649,7 +649,7 @@ footer {
   margin-left: 20px;
 }
 
-/**********************/
+/********PRICE**************/
 .price {
   text-align: center;
 }
@@ -778,7 +778,7 @@ footer {
   right: -15%;
 }
 
-/**********************/
+/********CERTIFiCATE**************/
 .certificate {
   padding-top: 80px;
   margin-bottom: 80px;
@@ -805,7 +805,7 @@ footer {
   font-size: 20px;
 }
 
-/**********************/
+/*******COMMENT***************/
 .comment {
   background-color: #fff;
   background: url(../img/comment_bcg.png);
@@ -1001,7 +1001,7 @@ footer {
   width: 25px;
 }
 
-/********************************/
+/***********CTA*********************/
 .cta {
   margin-bottom: 100px;
 }
@@ -1105,7 +1105,7 @@ footer {
   opacity: .5;
 }
 
-/********************************/
+/***********FOOTER*********************/
 .footer__item {
   display: flex;
   justify-content: space-between;
@@ -1535,6 +1535,32 @@ footer {
   }
   .faq__item::before {
     margin-right: 0;
+  }
+  input {
+    width: 23vw;
+  }
+  .cta__form {
+    width: 35vw;
+    margin: 80px 0 0 70px;
+  }
+  .cta__form-approval p {
+    font-size: 13px;
+  }
+  .cta__item h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .cta__item.forma {
+    background-size: 75%;
+    margin-right: 60px;
+    margin-left: -30px;
+  }
+  .cta__item.cta__desc {
+    margin-right: -30px;
+  }
+  .cta__item.cta__desc p {
+    font-size: 18px;
+    line-height: 103.2%;
   }
 }
 

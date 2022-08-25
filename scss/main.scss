@@ -25,11 +25,6 @@ body {
 	font-size: 15px;
 	line-height: 103.2%;	
 }
-header {
-  background: linear-gradient( 180deg, #FFFFFF 0%, #EEF1FD 100%) ; 
-	font-weight: 400;
-	margin-bottom: 60px;
-}
 button {
 	width: 273px;
 	height: 67px;
@@ -44,14 +39,6 @@ button {
 	text-transform: uppercase;
 	cursor: pointer;
 	box-shadow: 0px 6px 21px rgba(104, 130, 245, 0.67);
-}
-section {
-  padding: 0 15px;	
-}
-article {
-	width: 100%;
-	background-color: #EFF2FD;
-	margin: 0 auto;
 }
 h1 {
 	font-family: 'ALSSchlangesans-Bold';
@@ -92,7 +79,12 @@ input[type="checkbox"]:focus,
 input[type="radio"]:focus {
 	visibility: hidden;
 }
-
+// ***********************
+header {
+  background: linear-gradient( 180deg, #FFFFFF 0%, #EEF1FD 100%) ; 
+	font-weight: 400;
+	margin-bottom: 60px;
+}
 footer {
 	background: #EFF2FD;
 	padding-top: 50px;
@@ -102,7 +94,14 @@ footer {
 	max-width: 1140px; 
 	margin: 0 auto;
 }
-
+section {
+  padding: 0 15px;	
+}
+article {
+	width: 100%;
+	background-color: #EFF2FD;
+	margin: 0 auto;
+}
 /*********blocks***********/
 .header {
 	margin-top: 15px;
@@ -254,7 +253,7 @@ footer {
 		}
 	}
 }
-/**********************/
+/**********WHO************/
 .who {
 	&__title {
 		text-align: center;
@@ -330,7 +329,7 @@ footer {
 		}
 	}
 }
-/**********************/
+/******HOW****************/
 .how {
 	margin-bottom: 50px;
 	& h1 {
@@ -390,7 +389,7 @@ footer {
 		}	
 	}
 }
-/**********************/
+/*********WHY*************/
 .why {
 	margin-bottom: 80px;
 	& h1 {
@@ -458,7 +457,7 @@ footer {
 	display: block;
 	transition: .5s;
 }
-/**********************/
+/**********COMPARE************/
 .compare {
 	background-color: #fff;
 	margin-bottom: 80px;
@@ -526,7 +525,7 @@ footer {
 		}
 	}	
 }
-/**********************/
+/**********SCOOL************/
 .scool {
 	margin-bottom: 80px;		
 		& h1 {
@@ -571,7 +570,7 @@ footer {
     bottom: 17px;
     margin-left: 20px;
 }
-/**********************/
+/********PRICE**************/
 .price {
 	text-align: center;
 	& h1 {
@@ -687,7 +686,7 @@ footer {
 	bottom: 0;
 	right: -15%;
 }
-/**********************/
+/********CERTIFiCATE**************/
 .certificate {
 	padding-top: 80px;
 	margin-bottom: 80px;
@@ -709,7 +708,7 @@ footer {
 		}
 	}
 }
-/**********************/
+/*******COMMENT***************/
 .comment {
 	background-color: #fff;
 	background: url(../img/comment_bcg.png);
@@ -877,7 +876,7 @@ footer {
 .faq__items.active .faq__inner::after {
 	width: 25px;
 }
-/********************************/
+/***********CTA*********************/
 .cta {
 	margin-bottom: 100px;
 	&__items {
@@ -971,7 +970,7 @@ footer {
 		
 	}
 }
-/********************************/
+/***********FOOTER*********************/
 .footer {
 	&__item {
 		display: flex;
@@ -1456,6 +1455,41 @@ footer {
 				margin-right: 0;
 			}
 		}		
+	}
+	// *****CTA********
+	input {
+		width: 23vw;
+	}
+	.cta {
+		&__form {
+			width: 35vw;
+			margin: 80px 0 0 70px;
+			&-approval {
+				& p {
+					font-size: 13px;
+				}
+			}						
+		}
+		&__item {
+			& h1 {
+				font-size: 40px;
+				margin-bottom: 40px;
+			}
+			&.forma {
+				background-size: 75%;
+				margin-right: 60px;
+				margin-left: -30px;
+			}
+			&.cta__desc {
+				margin-right: -30px;
+				& p {
+					font-size: 18px;
+					line-height: 103.2%;
+				}
+			}
+		}
+
+		
 	}
 }
 @media (max-width: 930px) {
