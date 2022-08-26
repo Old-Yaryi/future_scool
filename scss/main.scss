@@ -1049,16 +1049,18 @@ article {
 		&-adress {
 			width: 230px;
 			position: relative;
-			& p {
+			padding-left: 50px;
+			margin-bottom: 6px;
+			& a {
 				font-size: 16px;
 				line-height: 27px;
 				margin-bottom: 16px;
-				margin-left: 50px;
 			}
 			&::after {
 				position: absolute;
 				content: url(../img/footer_map.svg);
-				top: 0;
+				top: -5px;
+				left: 0;
 			}
 		}
 		&-phone {
@@ -1066,7 +1068,7 @@ article {
 			& a {
 				font-size: 16px;
 				line-height: 27px;
-				margin-left: 50px;
+				padding-left: 50px;
 			}
 			&::after {
 				position: absolute;
@@ -1521,7 +1523,7 @@ article {
 				width: 140px;
 				margin-right: 40px;
 			}
-			&-adress p {
+			&-adress a {
 				font-size: 14px;
 			}
 		}
@@ -2058,6 +2060,9 @@ article {
 					width: 22vw;
 				}
 			}
+			&-social {
+				margin-bottom: 30px;
+			}
 			&-phone a {
 				font-size: 14px;
 			}
@@ -2084,6 +2089,28 @@ article {
 		}
 		&__form {
 			width: 50vw;
+		}
+	}
+	// ********footer*******
+	.footer {
+		&__inner {
+			&-logo {
+				width: 65vw;
+				margin-bottom: 40px;
+				& img {
+					width: 36vw;
+				}
+			}
+			&-classs {
+				width: 15vw;
+			}
+			&-social {
+				margin-right: 0;
+			}
+			&-location {
+				margin-left: 0;
+				column-gap: 50px;
+			}
 		}
 	}
 }
@@ -2255,6 +2282,41 @@ article {
 	.cta {
 		&__form {
 			width: 60vw;
+		}
+	}
+	// ************foooter*****
+	.footer {
+		&__inner {
+			&-logo {
+				& img {
+					width: 42vw;
+				}
+			}
+			&-classs {
+				margin-right: 0;
+				width: 18vw;
+			}
+			&-doc {
+				margin-right: 0;
+			}
+			&-location {
+				column-gap: 0;
+			}
+			&-adress {
+				width: 200px;
+				padding-left: 40px;
+				&::after {
+					left: -10px;
+				}
+			}	
+			&-phone {
+				& a {
+					padding-left: 40px;
+				}
+				&::after {
+					left: -10px
+				}
+			}		
 		}
 	}
 }
@@ -2665,6 +2727,25 @@ article {
 			}
 		}
 	}
+	// *****footer*********
+	.footer {
+		&__inner {
+			&-logo {
+				width: 70vw;
+				& img {
+					width: 50vw;
+				}
+			}
+			&-adress {
+				padding-left: 30px;
+			}
+			&-phone {
+				& a {
+					padding-left: 30px;
+				}
+			}
+		}
+	}
 }		
 @media (max-width: 415px) {
 	header {
@@ -2846,6 +2927,7 @@ article {
 		width: 60vw;
 	}
 	.cta {
+		margin-bottom: 340px;
 		&__item {
 			& h1 {
 				padding: 0;
@@ -2861,6 +2943,40 @@ article {
 			width: 84vw;
 		}
 		
+	}
+	// ******foooter*******
+	.footer {
+		& h4 {
+			font-size: 20px;
+		}
+		&__inner {
+			&-logo {
+				& img {
+					width: 60vw;
+				}
+			}
+			&-classs {
+				margin-bottom: 20px;
+				width: 30vw;
+				& a {
+					font-size: 15px;
+				}
+			}
+			&-doc {
+				margin-right: 45px;
+			}
+			&-location {
+				flex-direction: column;
+				margin-left: 25%;
+				row-gap: 6px;
+			}
+			&-adress a {
+				font-size: 15px;
+			}
+			&-phone a {
+				font-size: 15px;
+			}
+		}
 	}
 }
 @media (max-width: 320px) {
@@ -3096,6 +3212,7 @@ article {
 		width: 55vw;
 	}
 	.cta {
+		margin-bottom: 200px;
 		&__item {
 			&-img {
 				top: 600px;
@@ -3121,6 +3238,36 @@ article {
 			}
 			&-action {
 				padding: 30px 20px;
+			}
+		}
+	}
+	// *******foooter******
+	.footer {
+		& h4 {
+			font-size: 16px;
+		}
+		&__inner {
+			&-logo {
+				margin-bottom: 30px;
+				& img {
+					width: 38vw;
+				}
+			}
+			&-classs {
+				margin-bottom: 10px;
+				& a {
+					font-size: 14px;
+				}
+			}
+			&-location {
+				margin-top: 0;
+				margin-left: 15%;
+			}
+			&-adress a {
+				font-size: 14px;
+			}
+			&-phone a {
+				font-size: 14px;
 			}
 		}
 	}
