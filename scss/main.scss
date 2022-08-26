@@ -63,6 +63,11 @@ h3 {
 	line-height: 103%;
 	color: #243976;
 }
+h4 {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 103.2%;
+}
 input {
 	padding: 16px 8px 16px 64px;
 	color: #9E9E9E;
@@ -977,22 +982,20 @@ article {
 		justify-content: space-between;
 	}
 	&__inner {
-		&-logo {
-			margin-bottom: 65px;
-		}
 		&-cont {
 			font-weight: 400;
 			font-size: 8px;
-			line-height: 16px;
+			line-height: 203.2%;
 			color: #9299AF;
 			width: 254px;
-			margin-bottom: 16px;
+			padding-bottom: 16px;
+			letter-spacing: 2px;
 		}
 		& h4 {
 			font-size: 20px;
 			line-height: 21px;
 		}
-		&.classs {
+		&-classs {
 			display: flex;
 			flex-direction: column;
 			& h4 {
@@ -1004,13 +1007,13 @@ article {
 				line-height: 27px
 			}
 		}
-		&.doc {
+		&-doc {
 			position: relative;
 			& h4 {
 				margin-bottom: 25px;
 			}
 		}
-		&-doc {
+		&-licens {
 			position: relative;
 			&::after {
 				position: absolute;
@@ -1021,10 +1024,10 @@ article {
 				margin-left: 25px;
 			}
 		}
-		&.social h4 {
+		&-social h4 {
 			margin-bottom: 20px;
 		}
-		&-social {
+		&-socialnet {
 			display: flex;
 			height: 45px;
 			width: 45px;
@@ -1060,7 +1063,7 @@ article {
 		}
 		&-phone {
 			position: relative;
-			& p {
+			& a {
 				font-size: 16px;
 				line-height: 27px;
 				margin-left: 50px;
@@ -1069,6 +1072,7 @@ article {
 				position: absolute;
 				content: url(../img/footer_tel.svg);
 				top: -5px;
+				left: 0;
 			}
 		}
 	}
@@ -1492,6 +1496,36 @@ article {
 
 		
 	}
+	// ********footer*******
+	.footer {
+		& h4 {
+			font-size: 18px;
+		}
+		&__item {
+			justify-content: flex-start;
+		}
+		&__inner {
+			&-logo {
+				margin-right: 38px;
+				& img {
+					width: 14vw;
+				}
+			}
+			&-classs {
+				margin-right: 50px;
+			}
+			&-doc {
+				margin-right: 40px;
+			}
+			&-social {
+				width: 140px;
+				margin-right: 40px;
+			}
+			&-adress p {
+				font-size: 14px;
+			}
+		}
+	}
 }
 @media (max-width: 930px) {
 	.banner__item-text h2 {
@@ -1595,6 +1629,7 @@ article {
 	}
 	// *****CTA******
 	.cta {
+		margin-bottom: 380px;
 		&__items {
 			flex-direction: column;
 			width: 70%;
@@ -1629,6 +1664,25 @@ article {
 				& img {
 					width: 80%;
 				}
+			}
+		}
+	}
+	// ******footer*****
+	.footer {
+		&__item {
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		&__inner {
+			&-classs {
+				width: 10vw;
+			}
+			&-location {
+				display: flex;
+				column-gap: 108px;
+				margin-left: 15%;
+				margin-top: 30px;
+				margin-bottom: 30px;
 			}
 		}
 	}
@@ -1991,6 +2045,26 @@ article {
 		&__form {
 			width: 42vw;
 			margin: 80px 0 0 80px;
+		}
+	}
+	// *********footer*****
+	footer {
+		padding-top: 30px;
+	}
+	.footer {
+		&__inner {
+			&-logo {
+				& img {
+					width: 22vw;
+				}
+			}
+			&-phone a {
+				font-size: 14px;
+			}
+			&-cont {
+				margin: 0 auto;
+				text-align: center;
+			}
 		}
 	}
 }
