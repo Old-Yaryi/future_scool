@@ -64,7 +64,6 @@ menu_open.addEventListener('click', function(){
 const why_picture = document.querySelectorAll('.why__items_item-inner');
   why_picture.forEach(function (item) {
     item.addEventListener('click', function () {
-
       if(this.classList.contains('why__inner-active')) {
         this.classList.remove('why__inner-active');
       } else {
@@ -79,12 +78,23 @@ const imgActive = document.querySelectorAll('[data-tab]')
 const picture_active = document.querySelectorAll('.why__img-img'); 
   imgActive.forEach(function(item) {
     item.addEventListener('click', function (){
-
       picture_active.forEach( function(item){
         item.classList.remove('img-active');
       });
-
       const whyPicture = document.querySelector('#' + this.dataset.tab)
       whyPicture.classList.add('img-active')
     })
+  })
+
+// *****modal*****
+const modal_open = document.querySelectorAll('.button')
+const modal_send = document.querySelector('.modal')
+  modal_open.forEach(function (item) {
+    item.addEventListener('click', function (){
+      modal_send.style.display = 'flex'
+    })
+  })
+const modal_close = document.querySelector('.modal__inner-close')
+  modal_close.addEventListener('click', function (){
+    modal_send.style.display = 'none'
   })

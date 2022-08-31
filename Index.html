@@ -12,7 +12,7 @@
   <title>Школа будущего</title>
 </head>
 <body>
-  <!--  
+   
   <header>
     <section class="header">
       <div class="container">
@@ -63,7 +63,7 @@
               <span>Семейное образование с нами - это эффективно!</span>
             </p>         
             <div class="header__feedback">
-              <button class="header__feedback_button">Записаться на урок</button>
+              <button class="header__feedback_button button">Записаться на урок</button>
               <div class="header__feedback_messenger">
                   <div class="header__feedback_p">
                     <p>или написать: </p>
@@ -149,7 +149,7 @@
             <p>Не знаете подойдет ли вашему ребенку обучение онлайн? Попробуйте первый месяц со скидкой 50%!</p>
           </div>
           <div class="banner__item-feedback">
-            <button class="banner__item-feedback_button who_btn">Записаться на урок</button>
+            <button class="banner__item-feedback_button who_btn button">Записаться на урок</button>
             <div class="banner__item-feedback_messenger">
             <p>или написать: </p>
               <a href="#">
@@ -257,7 +257,7 @@
                 </div>
               </div>
               <div class="banner__item-feedback">
-                <button class="banner__item-feedback_button">Записаться на урок</button>
+                <button class="banner__item-feedback_button button">Записаться на урок</button>
                 <div class="banner__item-feedback_messenger">
                 <p>или написать: </p>
                   <a href="#">
@@ -281,7 +281,7 @@
   </article>
   
   <article class="compare" id="compare">
-      <h1>Глянем сравнение:</h1>
+      <h1>Преимущества онлайн-школы:</h1>
       <div class="compare__items">
         <div class="compare__items_img">
           <img src="./img/compare_1.png" alt="compare_1">
@@ -455,7 +455,7 @@
               <p>Не знаете подойдет ли вашему ребенку обучение онлайн? Попробуйте первый месяц со скидкой 50%!</p>
             </div>
             <div class="banner__item-feedback">
-              <button class="banner__item-feedback_button who_btn">Записаться на урок</button>
+              <button class="banner__item-feedback_button who_btn button">Записаться на урок</button>
               <div class="banner__item-feedback_messenger">
               <p>или написать: </p>
                 <a href="#">
@@ -470,8 +470,7 @@
         </div>
       </div>
   </section>
-  
-  
+    
   <article>
     <section class="price" id="price">
       <div class="container">
@@ -640,8 +639,7 @@
       </div>
     </section>
   </article>
-  
-  
+   
   <section class="certificate">
     <div class="container">
       <div class="certificate__item">
@@ -744,7 +742,6 @@
       
   </article>
 
- 
   <section class="faq">
     <div class="container">
       <div class="faq__items ">
@@ -796,7 +793,6 @@
             <br>
             <p>У нас  <span>онлайн обучение для школьников</span> проходит с полной привязкой к государственной образовательной программе для успешной сдачи выпускных экзаменов и поступления в ВУЗ. Поступление в школу официальное и требует подачи таких документов:</p>
             <ul>
-              <br>
               <li>паспорт родителей;</li>
               <li>свидетельство о рождении ребенка или паспорт;</li>
               <li>грамоты, похвальные листы и дипломы, если это необходимо для персонализации обучающего процесса; заявление.</li>
@@ -1061,7 +1057,7 @@
       </div>
     </div>
   </section>
-   -->
+   
   <section class="cta" id="cta" >
     <div class="container">
       <div class="cta__items">
@@ -1069,18 +1065,17 @@
           <div class="cta__form">
             <form class="cta__form-action">
               <div class="cta__form-order">
-                <input type="text" placeholder="Класс">
+                <input tabindex="1" type="text" name="userclass" placeholder="Класс">
               </div>
               <div class="cta__form-order name">
-                <input  type="text" placeholder="Имя родителя">
+                <input tabindex="2" type="text" name="username" placeholder="Имя родителя">
               </div>
               <div class="cta__form-order phone">
-                <input type="tel" placeholder="Телефон родителя">
+                <input tabindex="3" type="tel" name="userphone" placeholder="Телефон родителя">
               </div>
-              <button class="cta__form-btn" type="submit">Оставить заявку</button>            
+              <button tabindex="4" class="cta__form-btn" type="submit">Оставить заявку</button>            
               <p>Нажимая кнопку, вы даете согласие на <br>
-                обработку своих персональных данных</p>
-              
+                обработку своих персональных данных</p>             
             </form>
           </div>
         </div>
@@ -1094,7 +1089,6 @@
       </div>
     </div>
   </section>
-  
   
   <footer>
     <section class="footer">
@@ -1151,8 +1145,33 @@
       </div>
     </section>
   </footer>
- 
   
+  <div class="modal">
+    <div class="modal__inner">
+      <div class="modal__inner-close">
+        <img src="./img/faq_btn_close.svg" alt="modal-close">
+      </div>
+      <h2>Отправить заявку</h2>
+      <p>Наш менеджер свяжется с Вами
+        для предоставления консультации</p>
+      <form  class="modal__form">
+        <div class="cta__form-order">
+          <input tabindex="1" type="text" name="userclass" placeholder="Класс">
+        </div>
+        <div class="cta__form-order name">
+          <input tabindex="2" type="text" name="username" placeholder="Имя родителя">
+        </div>
+        <div class="cta__form-order phone">
+          <input tabindex="3" type="tel" name="userphone" placeholder="Телефон родителя">
+        </div>
+        <button tabindex="4" class="cta__form-btn" type="submit">Оставить заявку</button>              
+      </form>
+      <div class="modal__personal">          
+        <p>Нажимая кнопку, вы даете согласие на <br>
+              <span>обработку своих персональных данных</span> </p> 
+      </div>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script  src="./js/slick.min.js"></script>
   <script src="./js/main.js"></script>
