@@ -696,10 +696,10 @@ article {
   display: flex;
   justify-content: center;
   padding-bottom: 100px;
+  column-gap: 80px;
 }
 
 .price__table-inner {
-  margin-right: 97px;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 25px 25px 0px 50px;
@@ -710,10 +710,6 @@ article {
   height: 500px;
   padding-bottom: 26px;
   position: relative;
-}
-
-.price__table-inner:last-child {
-  margin-right: 0;
 }
 
 .price__table-inner h3 {
@@ -763,25 +759,11 @@ article {
   cursor: pointer;
 }
 
-.girl_1-4::after {
+.price__table-img {
   position: absolute;
-  content: url(../img/girl_1-4.png);
   bottom: 0;
-  right: -15%;
-}
-
-.girl_5-8::after {
-  position: absolute;
-  content: url(../img/girl_5-8.png);
-  bottom: 0;
-  right: -15%;
-}
-
-.girl_9-11::after {
-  position: absolute;
-  content: url(../img/girl_9-11.png);
-  bottom: 0;
-  right: -15%;
+  right: -45px;
+  z-index: 1;
 }
 
 /********CERTIFiCATE**************/
@@ -1240,19 +1222,21 @@ article {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   top: 0;
-  padding-left: 35%;
+  justify-content: center;
   padding-top: 10vh;
   display: none;
-  transition: all 0.8s ease-out 0s;
+  z-index: 2;
 }
 
 .modal__inner {
   width: 35vw;
+  height: 550px;
   background-color: #fff;
   padding: 30px;
   text-align: center;
   box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
   border-radius: 15px;
+  transition: all 0.8s ease-out 0.1s;
 }
 
 .modal__inner-close {
@@ -1276,10 +1260,14 @@ article {
 .modal__form {
   display: flex;
   flex-direction: column;
-  padding: 35px 25px;
+  padding: 35px 25px 20px;
   text-align: center;
   align-items: center;
   position: relative;
+}
+
+.modal__form .cta__form-btn {
+  margin-bottom: 0;
 }
 
 .modal__personal {
@@ -1340,15 +1328,12 @@ article {
     margin-bottom: 130px;
     font-size: 40px;
   }
+  .price__table {
+    column-gap: 30px;
+  }
   .price__table-inner {
     padding-left: 30px;
-    margin-right: 40px;
-  }
-  .price__table-inner:last-child {
-    margin-right: 0;
-  }
-  .price__table:last-child {
-    margin-right: 0;
+    width: 275px;
   }
   .price__buttons-inner {
     margin-left: 0;
@@ -1376,6 +1361,9 @@ article {
   .slick-track {
     column-gap: 8%;
     margin-left: -40%;
+  }
+  .modal__inner {
+    width: 40vw;
   }
 }
 
@@ -1535,16 +1523,14 @@ article {
     font-size: 14px;
   }
   .price__table {
-    padding-bottom: 40px;
+    padding-bottom: 55px;
+    margin-left: -15px;
   }
-  .price__table:last-child {
-    margin-right: 58px;
+  .price__table-inner {
+    width: 270px;
   }
   .price__table-inner p {
     font-size: 16px;
-  }
-  .price__table-inner:last-child {
-    margin-right: 5px;
   }
   .price__buttons-inner {
     width: 220px;
@@ -1699,19 +1685,18 @@ article {
   .scool__banner_item-img img {
     width: 13vh;
   }
+  .price h1 {
+    width: 90%;
+    margin: 0 auto;
+  }
   .price__table {
     flex-wrap: wrap;
-  }
-  .price__table:last-child {
-    margin-right: 0;
+    column-gap: 60px;
   }
   .price__table-inner {
-    width: 40%;
-    margin-right: 68px;
-  }
-  .price__table-inner:last-child {
+    width: 300px;
     margin-top: 90px;
-    margin-right: 0;
+    padding-left: 40px;
   }
   .price__table-inner p {
     width: 204px;
@@ -1793,6 +1778,12 @@ article {
     margin-left: 15%;
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+  .modal__inner p {
+    width: 265px;
+  }
+  .modal__personal {
+    padding: 0;
   }
 }
 
@@ -1992,18 +1983,20 @@ article {
   .price h1 {
     font-size: 38px;
   }
-  .price__table:last-child {
-    margin-right: -68px;
+  .price__table {
+    margin-left: -40px;
+    column-gap: 40px;
   }
   .price__table-inner {
-    width: 60%;
-  }
-  .price__table-inner:last-child {
-    margin-right: 68px;
+    width: 40vw;
+    padding-left: 20px;
   }
   .price__table-td_text {
     font-size: 15px;
     letter-spacing: 1px;
+  }
+  .price__table-img {
+    right: -55px;
   }
   .price__buttons-inner {
     margin-top: -55px;
@@ -2113,6 +2106,9 @@ article {
     margin: 0 auto;
     text-align: center;
   }
+  .modal__inner {
+    width: 50vw;
+  }
 }
 
 @media (max-width: 650px) {
@@ -2144,6 +2140,23 @@ article {
   .footer__inner-location {
     margin-left: 0;
     column-gap: 50px;
+  }
+  .modal__inner {
+    width: 60vw;
+  }
+  .price__table {
+    column-gap: 50px;
+    margin-left: 0;
+  }
+  .price__table-inner {
+    width: 50vw;
+  }
+  .price__table-img {
+    right: -65px;
+  }
+  .price__buttons-inner {
+    width: 85%;
+    margin-left: 40px;
   }
 }
 
@@ -2212,13 +2225,9 @@ article {
   }
   .price h1 {
     font-size: 34px;
-    margin-bottom: 80px;
-  }
-  .price__table:last-child {
-    margin-right: -35px;
   }
   .price__table-inner {
-    width: 70%;
+    width: 60vw;
   }
   .price__tabletd-text {
     font-size: 14px;
@@ -2226,15 +2235,6 @@ article {
   .price__buttons-inner {
     width: 85%;
     margin-left: 35px;
-  }
-  .girl_1-4::after {
-    right: -17%;
-  }
-  .girl_5-8::after {
-    right: -15%;
-  }
-  .girl_9-11::after {
-    right: -21%;
   }
   .certificate__inner h1 {
     font-size: 36px;
@@ -2320,6 +2320,12 @@ article {
   }
   .footer__inner-phone::after {
     left: -10px;
+  }
+  .modal__inner {
+    width: 70vw;
+  }
+  .modal__inner-close img {
+    width: 10%;
   }
 }
 
@@ -2580,26 +2586,12 @@ article {
   .price__table {
     margin-left: -40px;
   }
-  .price__table:last-child {
-    margin-right: 0;
-  }
   .price__table-td_text {
     font-size: 14px;
   }
   .price__table-inner {
-    margin-right: 0;
-  }
-  .price__table-inner:last-child {
-    margin-right: 0;
-  }
-  .price__table-inner.girl_5-8 {
-    margin-right: 0;
-  }
-  .girl_1-4::after {
-    right: -20%;
-  }
-  .girl_9-11::after {
-    right: -24%;
+    width: 70vw;
+    padding-left: 40px;
   }
   .certificate {
     margin-bottom: 70px;
@@ -2688,6 +2680,22 @@ article {
   .footer__inner-phone a {
     padding-left: 30px;
   }
+  .modal__inner {
+    width: 80vw;
+  }
+  .modal__inner h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  .modal__inner p {
+    font-size: 14px;
+  }
+  .modal__form {
+    padding: 20px 20px 20px;
+  }
+  .modal__personal p {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 415px) {
@@ -2772,29 +2780,26 @@ article {
   }
   .price h1 {
     font-size: 28px;
-    margin-bottom: 80px;
   }
   .price__buttons-inner {
-    width: 100%;
-    margin-left: 0;
+    width: 85%;
+    margin-left: 25px;
   }
   .price__table {
-    margin-left: -60px;
+    margin-left: -50px;
   }
   .price__table-inner {
-    padding-left: 10px;
+    padding-left: 20px;
   }
   .price__table-td_text {
     letter-spacing: 0;
   }
-  .girl_1-4::after {
-    right: -25%;
+  .price__table-img {
+    left: 205px;
+    right: 0;
   }
-  .girl_5-8::after {
-    right: -25%;
-  }
-  .girl_9-11::after {
-    right: -25%;
+  .price__table-img img {
+    width: 25vw;
   }
   .certificate {
     margin-bottom: 50px;
@@ -2877,6 +2882,32 @@ article {
   }
   .footer__inner-phone a {
     font-size: 15px;
+  }
+  .modal__inner {
+    height: 430px;
+    padding: 20px;
+  }
+  .modal__inner h2 {
+    font-size: 20px;
+  }
+  .modal__inner p {
+    font-size: 12px;
+    width: 210px;
+  }
+  .modal__form {
+    padding: 10px;
+  }
+  .modal__form input {
+    width: 50vw;
+  }
+  .modal__form .cta__form-order {
+    margin-bottom: 15px;
+  }
+  .modal__form .cta__form-btn {
+    height: 45px;
+  }
+  .modal__personal p {
+    font-size: 10px;
   }
 }
 
@@ -3020,6 +3051,9 @@ article {
   }
   .scool__banner_item-img img {
     width: 11vh;
+  }
+  .price__table-img {
+    left: 190px;
   }
   .certificate__inner h1 {
     font-size: 28px;

@@ -607,9 +607,8 @@ article {
 		display: flex;
 		justify-content: center;
 		padding-bottom: 100px;
-
+		column-gap: 80px;
 		&-inner {
-			margin-right: 97px;
 			background: #FFFFFF;
 			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 			border-radius: 25px 25px 0px 50px;
@@ -620,9 +619,6 @@ article {
 			height: 500px;
 			padding-bottom: 26px;
 			position: relative;
-			&:last-child {
-				margin-right: 0;
-			}
 			& h3 {
 				margin-bottom: 10px;
 			}
@@ -663,28 +659,15 @@ article {
 			align-items: center;
 			justify-content: center;
 			margin: 0 auto;
-			cursor: pointer;
-			
+			cursor: pointer;			
+		}
+		&-img {
+			position: absolute;
+			bottom: 0;
+			right: -45px;
+			z-index: 1;
 		}
 	}
-}
-.girl_1-4::after {
-	position: absolute;
-	content: url(../img/girl_1-4.png);
-	bottom: 0;
-	right: -15%;
-}
-.girl_5-8::after{
-	position: absolute;
-	content: url(../img/girl_5-8.png);
-	bottom: 0;
-	right: -15%;
-}
-.girl_9-11::after{
-	position: absolute;
-	content: url(../img/girl_9-11.png);
-	bottom: 0;
-	right: -15%;
 }
 /********CERTIFiCATE**************/
 .certificate {
@@ -1081,17 +1064,19 @@ article {
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.6);
 	top: 0;
-	padding-left: 35%;
+	justify-content: center;
 	padding-top: 10vh;
 	display: none;
-	transition: all 0.8s ease-out 0s;
+	z-index: 2;
 	&__inner {
 		width: 35vw;
+		height: 550px;
 		background-color: #fff;
 		padding: 30px;
 		text-align: center;
 		box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
     border-radius: 15px;
+		transition: all 0.8s ease-out 0.1s;
 		&-close {
 			text-align: right;
 			& img {
@@ -1110,10 +1095,13 @@ article {
 	&__form {
 		display: flex;
     flex-direction: column;
-    padding: 35px 25px;
+    padding: 35px 25px 20px;
     text-align: center;
     align-items: center;
     position: relative;
+		& .cta__form-btn {
+			margin-bottom: 0;
+		}
 	}
 	&__personal {
 		font-size: 13px;
@@ -1188,15 +1176,10 @@ article {
 			font-size: 40px;
 		}
 		&__table {
+			column-gap: 30px;
 			&-inner {
 				padding-left: 30px;
-				margin-right: 40px;
-				&:last-child {
-					margin-right: 0;
-				}
-			}
-			&:last-child {
-				margin-right: 0;
+				width: 275px;
 			}
 		}
 		&__buttons {
@@ -1234,6 +1217,9 @@ article {
 	.slick-track {
 		column-gap: 8%;
 		margin-left: -40%;
+	}
+	.modal__inner {
+		width: 40vw;
 	}
 }
 @media (max-width: 1000px) {
@@ -1429,16 +1415,12 @@ article {
 	// ****price****
 	.price {
 		&__table {
-			padding-bottom: 40px;
-			&:last-child {
-				margin-right: 58px;
-			}
+			padding-bottom: 55px;
+			margin-left: -15px;
 			&-inner {
+				width: 270px;
 				& p {
 					font-size: 16px;
-				}
-				&:last-child {
-					margin-right: 5px;
 				}
 			}
 		}
@@ -1447,8 +1429,7 @@ article {
 			height: 80px;
 			& h2 {
 				padding-top: 20px;
-			}
-			
+			}			
 		}
 	}
 	.girl_1-4::after {
@@ -1625,18 +1606,17 @@ article {
 	}	
 	// *****price****
 	.price {
+		& h1 {
+			width: 90%;
+			margin: 0 auto;
+		}
 		&__table {
 			flex-wrap: wrap;
-			&:last-child {
-				margin-right: 0;
-			}
+			column-gap: 60px;
 			&-inner {
-				width: 40%;
-				margin-right: 68px;
-				&:last-child {
-					margin-top: 90px;
-					margin-right: 0;
-				}
+				width: 300px;
+				margin-top: 90px;
+				padding-left: 40px;
 				& p {
 					width: 204px;
 				}
@@ -1734,6 +1714,17 @@ article {
 				margin-bottom: 30px;
 			}
 		}
+	}
+	// *****modal*****
+	.modal {
+		&__inner {
+			& p {
+				width: 265px;
+			}			
+		}
+		&__personal {
+			padding: 0;
+		}	
 	}
 }
 @media (max-width: 768px) {
@@ -1971,25 +1962,25 @@ article {
 			font-size: 38px;
 		}
 		&__table {
-			&:last-child {
-				margin-right: -68px;
-			}
+			margin-left: -40px;
+			column-gap: 40px;
 			&-inner {
-				width: 60%;
-				&:last-child {
-					margin-right: 68px;
-				}
+				width: 40vw;
+				padding-left: 20px;
 			}
 			&-td_text {
 				font-size: 15px;
 				letter-spacing: 1px;
+			}
+			&-img {
+				right: -55px;
 			}
 		}
 		&__buttons-inner {
 			margin-top: -55px;
 			width: 75%;
 			margin-left: 70px;
-		}
+		}		
 	}
 	.price__table-inner.girl_5-8 {
 		margin-right: 68px;
@@ -2119,6 +2110,10 @@ article {
 			}
 		}
 	}
+	// ******modal*****
+	.modal__inner {
+		width: 50vw;
+	}
 }
 @media (max-width: 650px){
 	.comment__slider {
@@ -2158,6 +2153,27 @@ article {
 				margin-left: 0;
 				column-gap: 50px;
 			}
+		}
+	}
+	// ***modal***
+	.modal__inner {
+		width: 60vw;
+	}
+	// ****price****
+	.price {
+		&__table {
+			column-gap: 50px;
+			margin-left: 0;
+			&-inner {
+				width: 50vw;
+			}
+			&-img {
+				right: -65px;
+			}
+		}
+		&__buttons-inner {
+			width: 85%;
+			margin-left: 40px;
 		}
 	}
 }
@@ -2235,14 +2251,10 @@ article {
 	.price {
 		& h1 {
 			font-size: 34px;
-			margin-bottom: 80px;
 		}
 		&__table {
-			&:last-child {
-				margin-right: -35px;
-			}
 			&-inner {
-				width: 70%;
+				width: 60vw;
 			}
 			&td-text {
 				font-size: 14px;
@@ -2252,15 +2264,6 @@ article {
 			width: 85%;
 			margin-left: 35px;
 		}
-	}
-	.girl_1-4::after {
-		right: -17%;
-	}
-	.girl_5-8::after {
-		right: -15%;
-	}
-	.girl_9-11::after {
-		right: -21%;
 	}
 	// ******certificate******
 	.certificate {
@@ -2364,6 +2367,15 @@ article {
 					left: -10px
 				}
 			}		
+		}
+	}
+	// *****modal*****
+	.modal__inner {
+		width: 70vw;
+		&-close {
+			& img {
+				width: 10%;
+			}
 		}
 	}
 }
@@ -2664,28 +2676,14 @@ article {
 	.price {
 		&__table {
 			margin-left: -40px;
-			&:last-child{
-				margin-right: 0;
-			}
 			&-td_text {
 				font-size: 14px;
 			}
 			&-inner {
-				margin-right: 0;
-				&:last-child {
-					margin-right: 0;
-				}
+				width: 70vw;
+				padding-left: 40px;
 			}
 		}
-	}
-	.price__table-inner.girl_5-8 {
-		margin-right: 0;
-	}
-	.girl_1-4::after {
-		right: -20%;
-	}
-	.girl_9-11::after {
-		right: -24%;
 	}
 	// *******certidicate*****
 	.certificate {
@@ -2793,6 +2791,27 @@ article {
 			}
 		}
 	}
+	// ****modal****
+	.modal {
+		&__inner {
+			width: 80vw;
+			& h2 {
+				margin-bottom: 10px;
+				font-size: 24px;
+			}
+			& p {
+			font-size: 14px;
+			}
+		}
+		&__form {
+			padding: 20px 20px 20px;
+		}
+		&__personal {
+			& p {
+				font-size: 12px;
+			}
+		}
+	}
 }		
 @media (max-width: 415px) {
 	header {
@@ -2896,30 +2915,27 @@ article {
 	.price {
 		& h1 {
 			font-size: 28px;
-			margin-bottom: 80px;
 		}
 		&__buttons-inner {
-			width: 100%;
-			margin-left: 0;
+			width: 85%;
+			margin-left: 25px;
 		}
 		&__table {
-			margin-left: -60px;
+			margin-left: -50px;
 			&-inner {
-				padding-left: 10px;
+				padding-left: 20px;
 			}
 			&-td_text {
 				letter-spacing: 0;
 			}
+			&-img {
+				left: 205px;
+					right: 0;
+				& img {
+					width: 25vw;					
+				}
+			}
 		}
-	}
-	.girl_1-4::after {
-		right: -25%;
-	}
-	.girl_5-8::after {
-		right: -25%;
-	}
-	.girl_9-11::after {
-		right: -25%;
 	}
 	// *******certidicate*****
 	.certificate {
@@ -3023,6 +3039,35 @@ article {
 			&-phone a {
 				font-size: 15px;
 			}
+		}
+	}
+	// *****modal****
+	.modal {
+		&__inner {
+			height: 430px;
+			padding: 20px;
+			& h2 {
+				font-size: 20px;
+			}
+			& p {
+				font-size: 12px;
+				width: 210px;
+			}
+		}
+		&__form {
+			padding: 10px;
+			& input {
+				width: 50vw;
+			}
+			& .cta__form-order {
+				margin-bottom: 15px;
+			}
+			& .cta__form-btn {
+				height: 45px;
+			}
+		}
+		&__personal p {
+			font-size: 10px;
 		}
 	}
 }
@@ -3196,6 +3241,10 @@ article {
 		& img {
 			width: 11vh;
 		}
+	}
+	// ********price*****
+	.price__table-img {
+		left: 190px;
 	}
 	// *******certidicate*****
 	.certificate {
