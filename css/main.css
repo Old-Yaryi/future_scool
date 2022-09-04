@@ -179,6 +179,26 @@ article {
   font-size: 14px;
 }
 
+.header__menu_list li a {
+  position: relative;
+}
+
+.header__menu_list li a::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background: linear-gradient(272.77deg, #864FF1 0%, #49B3F7 100%);
+  left: 50%;
+  width: 0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  bottom: -5px;
+}
+
+.header__menu_list li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
 .header__menu_account {
   display: flex;
   align-items: center;
@@ -1344,17 +1364,6 @@ article {
   .price__buttons-inner h2 span {
     font-size: 14px;
   }
-  .girl_1-4::after {
-    right: -15%;
-    z-index: 1;
-  }
-  .girl_5-8::after {
-    right: -15%;
-    z-index: 1;
-  }
-  .girl_9-11::after {
-    right: -4%;
-  }
   .certificate__inner h1 {
     margin-bottom: 36px;
   }
@@ -2003,19 +2012,6 @@ article {
     width: 75%;
     margin-left: 70px;
   }
-  .price__table-inner.girl_5-8 {
-    margin-right: 68px;
-    margin-top: 90px;
-  }
-  .girl_1-4::after {
-    right: -8%;
-  }
-  .girl_5-8::after {
-    right: -8%;
-  }
-  .girl_9-11::after {
-    right: -8%;
-  }
   .certificate {
     padding-top: 40px;
   }
@@ -2189,9 +2185,18 @@ article {
   .banner__item-feedback_button.who_btn {
     width: 240px;
   }
+  .why__inner-active {
+    margin-bottom: 280px;
+  }
   .why__img-img {
     width: 90%;
     right: 0;
+  }
+  .why__items_item-inner img {
+    margin-left: 10px;
+  }
+  .why__items_item-inner_text {
+    padding-right: 10px;
   }
   .img-active, #img_box1 {
     top: -710px;
@@ -2366,6 +2371,8 @@ article {
   }
   .header__menu_account {
     display: none;
+    margin-top: 0;
+    margin-left: -10px;
   }
   .header__age {
     display: none;
@@ -2423,7 +2430,6 @@ article {
   .header__menu.mobile .header__menu_account {
     display: flex;
     margin-bottom: 30px;
-    margin-right: 40px;
   }
   .header__menu.mobile .header__menu_phone {
     display: block;
@@ -2728,12 +2734,16 @@ article {
   }
   .banner__item-feedback_button.who_btn {
     width: 260px;
+    margin-left: -15px;
   }
   .who__banner_item-img img {
     width: 10vh;
   }
   .why {
     margin-bottom: 50px;
+  }
+  .why__items_item-inner_img {
+    margin-right: 0;
   }
   .why__items_item-inner img {
     margin-top: 50px;
