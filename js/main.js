@@ -2,19 +2,11 @@
 // ***************slider_Jq*********
 $(document).ready(function(){
   $('.comment__slider').slick({
-    
-      // infinite: true,
       centerMode: true,
       centerPadding: '0px',
-  //     arrows: true,
-  //     dots: false,
       slidesToShow: 3,
       slidesToScroll: 2,
-      // autoplay: true,
-      // autoplaySpeed: 2000
-      responsive: [
-         
-        
+      responsive: [                 
         {
           breakpoint: 931,
           settings: {
@@ -34,8 +26,7 @@ $(document).ready(function(){
             slidesToShow: 1
           }
         }
-      ]
-    
+      ]   
    });
 });
 // ************accordeon**********

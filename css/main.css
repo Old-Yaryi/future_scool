@@ -2851,6 +2851,9 @@ article {
     width: 32px;
     background-size: 90%;
   }
+  .faq__item h2 {
+    font-size: 16px;
+  }
   input {
     width: 60vw;
   }
