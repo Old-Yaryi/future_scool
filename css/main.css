@@ -811,6 +811,7 @@ article {
 
 .certificate__inner p {
   font-size: 20px;
+  line-height: 103.2%;
 }
 
 /*******COMMENT***************/
@@ -948,7 +949,7 @@ article {
   position: absolute;
   content: "";
   background-image: url(../img/faq_btn_open.svg);
-  margin-right: 58px;
+  margin-right: 10px;
   right: 0;
   height: 50px;
   width: 50px;
