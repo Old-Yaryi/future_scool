@@ -1,6 +1,7 @@
 # Школа Будущего.
 
-![Future-scool](https://user-images.githubusercontent.com/90776708/225571873-755f3d94-c4ee-4921-bd33-634eebc5fdd0.jpg)
+
+![Future-scool_mini](https://user-images.githubusercontent.com/90776708/225572068-9e0f9eca-df24-481a-8308-34b4f2110c8b.png)
 
 ## Пример адаптивной верстки landing page или заглавной страницы сайта.
 ### Используются:
